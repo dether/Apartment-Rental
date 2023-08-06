@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--second-bg-color);
+}
+
+.container-home h1 {
+  font-size: 5.9rem;
+  font-weight: 700; /*grosor*/
+  line-height: 1.3; /*espacio entre lineas vertical*/
+  
+}
+
+.container-home p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.home-img {
+  width: 47vw;
+}

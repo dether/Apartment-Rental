@@ -1,0 +1,22 @@
+{
+  "departmentsSantaTeresita": [
+    {
+      "type":"Monoambiente",
+      "name": "Departamentos Monoambientes",
+      "Quantity Available": "1",
+      "available": "true",
+      "services":["Luz", "Cable", "Agua"],
+      "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patioIncluye Mesada, baño, patio y lavado en el patioIncluye Mesada, baño, patio y lavado en el patioIncluye Mesada, baño, patio y lavado en el patioIncluye Mesada, baño, patio y lavado en el patioIncluye Mesada, baño, patio y lavado en el patio",
+      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
+    },
+    { 
+      "type":"Biambiente",
+      "name": "Departamentos Biambientes",
+      "Quantity Available": "No disponible",
+      "available": "false",
+      "services":["Luz", "Cable", "Agua"],
+      "description": "Incluye Mesada, baño, patio y lavado en el patio",
+      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.tokkobroker.com%2Fpictures%2F20423046796908484391545907069030572055494643213197549376987739746881500522659.jpg"
+    }
+  ]
+}
