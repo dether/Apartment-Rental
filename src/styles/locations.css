@@ -1,0 +1,22 @@
+.location {
+  padding-top: 9rem; /* Deja espacio para el navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.map-ST {
+  width: calc(50% - 2rem); /* Deja un pequeño espacio entre los mapas */
+}
+
+.map-SM {
+  width: calc(50% - 2rem); /* Deja un pequeño espacio entre los mapas */
+}

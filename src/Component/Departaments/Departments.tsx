@@ -2,17 +2,40 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ST from "../../../public/ST/ST.png";
 import SM from "../../../public/SM/SM.png";
-import Bed from "../../../public/iconos/Bed.svg";
-import Bath from "../../../public/iconos/bath.svg";
 import "../../styles/departments.css";
+import departmentsSM from "../../utils/departmentsSM.json";
+import departmentsST from "../../utils/departmentsST.json";
+
+interface Department {
+	type: string;
+	name: string;
+	available: boolean;
+	services: string[];
+	description: string;
+	dimensions: string;
+	img: string;
+}
 
 const Departments: React.FC = () => {
+	const countAvailableST = departmentsST.departmentsSantaTeresita.filter(
+		(department: Department) => department.available === true
+	).length;
+	const countNotAvailableST = departmentsST.departmentsSantaTeresita.filter(
+		(department: Department) => department
+	).length;
+
+	const countAvailableSM = departmentsSM.departmentsSantaMonica.filter(
+		(department: Department) => department.available === true
+	).length;
+	const countNotAvailableSM = departmentsSM.departmentsSantaMonica.filter(
+		(department: Department) => department
+	).length;
+
 	return (
 		<div>
 			<section className="departments" id="departments">
-				<div className="heading">
-					<h2>Departamentos</h2>
-				</div>
+					<h2 className="heading">Departamentos</h2>
+
 				<div className="card-container">
 					<div className="card">
 						<Link to="/departments/santa-teresita" className="custom-link">
@@ -23,20 +46,7 @@ const Departments: React.FC = () => {
 									Estás buscando un departamento en Santa Teresita? Te
 									presentamos estas excelentes opciones...
 								</p>
-								<ul>
-									<li>
-										<img src={Bed} alt="Bed" className="card-icon" />
-										<span>1</span>
-									</li>
-									<li>
-										<img src={Bed} alt="Bed" className="card-icon" />
-										<span>2</span>
-									</li>
-									<li>
-										<img src={Bath} alt="Bath" className="card-icon" />
-										<span>1</span>
-									</li>
-								</ul>
+								<p>Departamentos disponibles: <strong>{countAvailableST}</strong>/{countNotAvailableST}</p>
 							</div>
 						</Link>
 					</div>
@@ -50,20 +60,7 @@ const Departments: React.FC = () => {
 									Estás buscando un departamento en Santa Monica? Te presentamos
 									estas excelentes opciones...
 								</p>
-								<ul>
-									<li>
-										<img src={Bed} alt="Bed" className="card-icon" />
-										<span>1</span>
-									</li>
-									<li>
-										<img src={Bed} alt="Bed" className="card-icon" />
-										<span>2</span>
-									</li>
-									<li>
-										<img src={Bath} alt="Bath" className="card-icon" />
-										<span>1</span>
-									</li>
-								</ul>
+								<p>Departamentos disponibles: <strong>{countAvailableSM}</strong>/{countNotAvailableSM}</p>
 							</div>
 						</Link>
 					</div>

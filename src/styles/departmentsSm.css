@@ -1,11 +1,12 @@
-.departmentsSt {
+/* departmentsSm.css */
+
+.departmentsSm {
   display: grid;
-  grid-template-columns: 1fr; /* Una columna */
   justify-content: center;
   gap: 2em;
 }
 
-.departmentSt-card {
+.departmentSm-card {
   display: grid; /* Utilizamos grid para organizar el contenido */
   grid-template-columns: 1fr 2fr; /* Dos columnas: 1fr para la imagen, 2fr para el contenido */
   gap: 2rem;
@@ -16,47 +17,48 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.departmentSt-img img {
+.departmentSm-img img {
   width: 100%;
   max-width: 800px; /* Ajusta el tamaño máximo de la imagen según tus preferencias */
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-.departmentSt-content {
-  display: grid;
+.departmentSm-content {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   padding: 0;
-  place-items: left;
-  grid-template-columns: repeat(1fr);
 }
 
-.departmentSt-content h2 {
+.departmentSm-content .heading {
   font-size: 3rem;
-  font-weight: 30px;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.departmentSt-content p {
+.departmentSm-content p {
   font-size: 1.6rem;
   margin: 1rem 0;
-  margin-top: 2rem;
 }
 
-.servicesSt-list {
+.servicesSm-list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Tres columnas para los servicios */
   gap: 1rem;
+  padding: 0;
 }
 
-.servicesSt-list li {
+.servicesSm-list li {
   display: flex;
   align-items: center;
   font-size: 1.6rem;
-  margin-bottom: 2em;
+  margin-bottom: 1rem;
 }
 
-.servicesSt-list img {
+.servicesSm-list img {
   width: 30px;
   height: 30px;
   margin-right: 0.5em;

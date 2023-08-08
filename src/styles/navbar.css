@@ -4,7 +4,7 @@
 	left: 0;
 	width: 100%;
 	padding: 2rem 9%;
-	background: var(--bg-color);
+	background: red;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -18,7 +18,7 @@
 	cursor: default;
 }
 
-.a {
+.navbar a {
 	font-size: 1.7rem;
 	color: var(--text-color);
 	margin-left: 4rem;
@@ -26,6 +26,6 @@
   cursor: pointer;
 }
 
-.a:hover {
+.navbar a:hover {
 	color: var(--main-color);
 }

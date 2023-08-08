@@ -1,39 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 import departments from "../../utils/departmentsST.json";
 import light from "../../../public/iconos/Light bulb.svg";
 import water from "../../../public/iconos/Tap Water Drink.svg";
 import cable from "../../../public/iconos/cable tv.svg";
 import "../../styles/departmentsSt.css";
+import Bed from "../../../public/iconos/Bed.svg";
 
-interface DepartmentMonoambiente {
+interface Department {
 	type: string;
 	name: string;
-	"Quantity Available": string;
-	available: string;
+	available: boolean;
 	services: string[];
 	description: string;
+	dimensions: string;
 	img: string;
 }
 
-const BiDepartments: React.FC = () => {
-	return (
-		<div>
-			{/* Departamentos Monoambiente */}
-			<section className="departments" id="departments">
-				{departments.departmentsSantaTeresita.map(
-					(departamento: DepartmentMonoambiente, index: number) => (
-						<div key={index} className="department-card">
-							<div className="department-img" key={index}>
-								<img src={departamento.img} alt={departamento.name} />
-							</div>
+const DepartmentsST: React.FC = () => {
+  const [filterType, setFilterType] = useState<"todos" | "monoambiente" | "dosPersonas" | "tienda">("todos");
+  const [filterAvailability, setFilterAvailability] = useState<"todos" | "disponible" | "noDisponible">("todos");
 
-							<div className="department-content">
-								<h2 className="heading">{departamento.name}</h2>
-                <h1>Descripción: </h1>
-								<p>{departamento.description}</p>
-                <h1>Disponibilidad: </h1>
-								<ul className="services-list">
-									{departamento.services.map((service, i) => (
+  const filteredDepartments = departments.departmentsSantaTeresita.filter((department: Department) => {
+    const matchesType = filterType === "todos" || department.type === filterType;
+    const matchesAvailability =
+      filterAvailability === "todos" ||
+      (filterAvailability === "disponible" && department.available) ||
+      (filterAvailability === "noDisponible" && !department.available);
+
+    return matchesType && matchesAvailability;
+  });
+
+  return (
+    <div>
+      <section className="departmentsSt" id="departmentsSt">
+        <div className="filterSt-container">
+          <label htmlFor="typeFilter">Filtrar por Tipo:</label>
+          <select
+            id="typeFilter"
+            value={filterType}
+            onChange={(event) => setFilterType(event.target.value as typeof filterType)}
+          >
+            <option value="todos">Todos</option>
+            <option value="Monoambiente">Monoambiente</option>
+            <option value="Para dos personas">Para dos personas</option>
+            <option value="Tienda">Tienda</option>
+          </select>
+        </div>
+        <div className="filterSt-container">
+          <label htmlFor="availabilityFilter">Filtrar por Disponibilidad:</label>
+          <select
+            id="availabilityFilter"
+            value={filterAvailability}
+            onChange={(event) => setFilterAvailability(event.target.value as typeof filterAvailability)}
+          >
+            <option value="todos">Todos</option>
+            <option value="disponible">Disponible</option>
+            <option value="noDisponible">No disponible</option>
+          </select>
+        </div>
+        {filteredDepartments.map((department: Department, index: number) => (
+          <div key={index} className="departmentSt-card">
+            <div className="departmentSt-img">
+              <img src={department.img} alt={department.name} />
+            </div>
+
+							<div className="departmentSt-content">
+								<h2 className="heading">{department.name}</h2>
+								<p>{department.description}</p>
+								<p>
+									<strong>Tipo:</strong> {department.type}
+								</p>
+								<p>
+									<strong>Disponibilidad:</strong>{" "}
+									{department.available === true
+										? "Disponible"
+										: "No disponible"}
+								</p>
+								<p>
+									<strong>Dimensiones:</strong> {department.dimensions}
+								</p>
+								<ul className="servicesSt-list">
+									{department.services.map((service, i) => (
 										<li key={i}>
 											{service === "Luz" && <img src={light} alt="Luz" />}
 											{service === "Agua" && <img src={water} alt="Agua" />}
@@ -41,58 +88,95 @@ const BiDepartments: React.FC = () => {
 											<span>{service}</span>
 										</li>
 									))}
+									{department.type === "Monoambiente" ? (
+										<li>
+											<img src={Bed} alt="Bed" />
+											<p>1</p>
+										</li>
+									) : (
+										<li>
+											<img src={Bed} alt="Bed" />
+											<p>2</p>
+										</li>
+									)}
 								</ul>
 							</div>
 						</div>
 					)
 				)}
-
 			</section>
 		</div>
 	);
 };
 
-export default BiDepartments;
+export default DepartmentsST;
 
-/* 
-{data.departments.map((departamento, index) => (
-        <div className="departments-img" key={index}>
-        <img src={departamento.img} alt={departamento.name} style={{ maxWidth: '300px' }} />
-        </div>
-        <div className="departments-content">
-          <h2 className="heading">{departamento.name}</h2>
-          <p>Tipo: {departamento.type}</p>
-          <p>Disponibilidad: {departamento.available ? 'Disponible' : 'No disponible'}</p>
-          <p>Descripción: {departamento.description}</p>
-          <p>Servicios: {departamento.services.join(', ')}</p>
-        </div>
-      ))}
-*/
+/* import React from "react";
+import departments from "../../utils/departmentsST.json";
+import light from "../../../public/iconos/Light bulb.svg";
+import water from "../../../public/iconos/Tap Water Drink.svg";
+import cable from "../../../public/iconos/cable tv.svg";
+import "../../styles/departmentsSt.css";
+import Bed from "../../../public/iconos/Bed.svg";
 
-/* 
-import "../styles/departments.css"
-import data from "../utils/departments.json";
+interface Department {
+	type: string;
+	name: string;
+	available: string;
+	services: string[];
+	description: string;
+	dimensions: string;
+	img: string;
+}
 
-const Departments = () => {
+const DepartmentsST: React.FC = () => {
 
-  return (
-		<section className="departments" id="departments">
-			<div className="departments-img">
-				<img
-					src="https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
-					alt="photo"
-				></img>
-			</div>
+	
 
-			<div className="departments-content">
-				<h2 className="heading">Departamento Monoambiente</h2>
-				<p>Mesada, Baño, Habitación, Patio</p>
-				<p>Cable</p>
-				<p>Luz</p>
-				<p>Agua</p>
-			</div>
-		</section>
+	return (
+		<div>
+			<section className="departments" id="departments">
+				{departments.departmentsSantaTeresita.map(
+					(department: Department, index: number) => (
+						<div key={index} className="department-card">
+							<div className="department-img" key={index}>
+								<img src={department.img} alt={department.name} />
+							</div>
+
+							<div className="department-content">
+								<h2 className="heading">{department.name}</h2>
+								<p>{department.description}</p>
+								<p><strong>Tipo:</strong> {department.type}</p>
+              <p><strong>Disponibilidad:</strong> {department.available === "true" ? "Disponible" : "No disponible"}</p>
+              <p><strong>Dimensiones:</strong> {department.dimensions}</p>
+								<ul className="services-list">
+									{department.services.map((service, i) => (
+										<li key={i}>
+											{service === "Luz" && <img src={light} alt="Luz" />}
+											{service === "Agua" && <img src={water} alt="Agua" />}
+											{service === "Cable" && <img src={cable} alt="Cable" />}
+											<span>{service}</span>
+										</li>
+									))} 
+									{department.type === "Monoambiente" ? (
+										<li>
+											<img src={Bed} alt="Bed" />
+											<p>1</p>
+										</li>
+									) : (
+										<li>
+											<img src={Bed} alt="Bed" />
+											<p>2</p>
+										</li>
+									)}
+								</ul>
+							</div>
+						</div>
+					)
+				)}
+			</section>
+		</div>
 	);
 };
-export default Departments;
-*/
+
+export default DepartmentsST; */
