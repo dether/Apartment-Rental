@@ -5,14 +5,14 @@
       "name": "Departamento 1",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
-      "description": "Incluye Mesada, baño, patio y lavado en el patio",
+      "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio" ,
       "dimensions": "15x15 mtrs",
       "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
     },
     {
       "type":"Monoambiente",
       "name": "Departamento 2",
-      "available": false,
+      "available": true,
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",

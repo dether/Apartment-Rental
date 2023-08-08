@@ -3,7 +3,6 @@ import departments from "../../utils/departmentsSM.json";
 import light from "../../../public/iconos/Light bulb.svg";
 import water from "../../../public/iconos/Tap Water Drink.svg";
 import cable from "../../../public/iconos/cable tv.svg";
-import "../../styles/departmentsSm.css";
 import Bed from "../../../public/iconos/Bed.svg";
 
 interface Department {
@@ -41,6 +40,7 @@ const DepartmentsSM: React.FC = () => {
 		<div>
 			<section className="departmentsSm" id="departmentsSm">
 				<div className="filterSm-container">
+					<div className="filters">
 					<label htmlFor="typeFilter">Filtrar por Tipo:</label>
 					<select
 						id="typeFilter"
@@ -53,8 +53,7 @@ const DepartmentsSM: React.FC = () => {
 						<option value="Monoambiente">Monoambiente</option>
 						<option value="Para dos personas">Para dos personas</option>
 					</select>
-				</div>
-				<div className="filterSm-container">
+					
 					<label htmlFor="availabilityFilter">
 						Filtrar por Disponibilidad:
 					</label>
@@ -71,11 +70,13 @@ const DepartmentsSM: React.FC = () => {
 						<option value="disponible">Disponible</option>
 						<option value="noDisponible">No disponible</option>
 					</select>
+					</div>
 					<button
 						onClick={() => {
 							setFilterType("todos");
 							setFilterAvailability("todos");
 						}}
+						className="btn"
 					>
 						Limpiar Filtros
 					</button>

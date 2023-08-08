@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import "../styles/contact.css";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
@@ -184,8 +183,9 @@ const Contact: React.FC = () => {
       Contacto
       </h2>
 
-      <div className="contactt">
+      <div className="contact-container">
         <form ref={form} action="#" onSubmit={handleSubmit}>
+          
           <div className="input-box">
             <div className="input-container">
               <input
@@ -197,6 +197,7 @@ const Contact: React.FC = () => {
                 onChange={handleChange}
               />
               {errors.fullName && <span className="error-message">{errors.fullName}</span>}
+
             </div>
             <div className="input-container">
               <input
@@ -207,6 +208,7 @@ const Contact: React.FC = () => {
 
                 onChange={handleChange}
               />
+
               {errors.email && <span className="error-message">{errors.email}</span>}
             </div>
           </div>
@@ -221,6 +223,7 @@ const Contact: React.FC = () => {
 
                 onChange={handleChange}
               />
+
               {errors.mobileNumber && <span className="error-message">{errors.mobileNumber}</span>}
             </div>
             <div className="input-container">
@@ -236,7 +239,6 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          
             <textarea
               name="mensaje"
               id="message"
@@ -248,13 +250,14 @@ const Contact: React.FC = () => {
             />
             {errors.message && <span className="error-message-textarea">{errors.message}</span>}
           
-
-						<input
+						<button
             type="submit"
-            value="Enviar email"
-            className={`btn ${isButtonDisabled ? "btn-disabled" : ""}`}
+            
+            className={`btn ${isButtonDisabled ? "btn-disabled" : "active"}`}
             disabled={isButtonDisabled}
-          />
+          >
+            Enviar email
+          </button>
         </form>
       </div>
     </section>

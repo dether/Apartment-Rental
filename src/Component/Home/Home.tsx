@@ -1,15 +1,14 @@
 import React from "react";
 import Slider from "./Slider";
-import "../../styles/home.css";
 import deptos from "../../../public/deptos.png"
 import AvailableDepartments from "./AvailableDepartments";
-
+import Footer from "../Footer";
 
 const Home: React.FC = () => {
 	return (
-    <div>
+    <div id="home">
 			<Slider />
-		<section className="home" id="home">
+		<section className="home">
       <div className="home-content">
         <h3>Bienvenidos a</h3>
         <h1>Departamentos Vargas</h1>
@@ -21,6 +20,7 @@ Todas las habitaciones del hotel están equipadas con TV de pantalla plana con c
       </div>
       </section>
       <AvailableDepartments />
+      <Footer />
       </div>
 	);
 };

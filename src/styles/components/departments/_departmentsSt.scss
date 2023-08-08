@@ -1,0 +1,116 @@
+.departmentsSt {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	background: var(--second-bg-color);
+
+	.filterSt-container {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		margin-bottom: 1em;
+		justify-content: space-around;
+
+		.filters {
+			display: flex;
+			align-items: center;
+			gap: 1em;
+
+		}
+		label {
+			font-size: 1.6rem;
+		}
+		select {
+			padding: 0.5em 1em;
+			font-size: 1.6rem;
+			/* border: 1px solid var(--text-color); */
+			border-radius: 5px;
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			cursor: pointer;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+
+			&:hover {
+				background-color: var(--second-main-color);
+			}
+			option {
+				font-size: 1.6rem;
+			}
+		}
+
+		.btn {
+			padding: 0.5em 1em;
+			font-size: 1.6rem;
+			border: none;
+			border-radius: 5px;
+			background-color: var(--second-main-color); // Utiliza la variable
+			color: var(--text-color); // Utiliza la variable
+			cursor: pointer;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+			/* margin-left: 10rem; */
+
+			&:hover {
+				background-color: var(--main-color); // Utiliza la variable
+			}
+		}
+	}
+
+	.departmentSt-card {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+    align-items: center;
+		padding: 1rem;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+
+
+		.departmentSt-img img {
+			width: 100%;
+			max-width: 400px;
+			height: 38.8vh;
+			max-height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		.departmentSt-content {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			padding: 0;
+
+			.heading {
+				text-align: center;
+				font-size: 3rem;
+				margin-bottom: 2rem;
+			}
+
+			p {
+				margin: 1rem;
+				font-size: 1.6rem;
+			}
+
+			.servicesSt-list {
+				margin-left: 5rem;
+				list-style: none;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 2rem;
+				padding: 1rem;
+
+				li {
+					display: flex;
+					align-items: center;
+					font-size: 1.6rem;
+					margin-bottom: 1rem;
+				}
+
+				img {
+					width: 30px;
+					height: 30px;
+					margin-right: 0.5em;
+				}
+			}
+		}
+	}
+}

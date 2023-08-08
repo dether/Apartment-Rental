@@ -1,0 +1,55 @@
+// _navbar.scss
+.container-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color); // Usamos la variable para el color de fondo
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar {
+  a {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    &:hover {
+      color: var(--second-main-color); // Usamos la variable para el color de enlace al hacer hover
+    }
+  }
+}
+
+
+/* .logo {
+	font-size: 2.5rem;
+	color: var(--text-color);
+	font-weight: 600;
+	cursor: default;
+} */
+
+/* .navbar a {
+	font-size: 1.7rem;
+	color: var(--text-color);
+	margin-left: 4rem;
+	transition: 0.3s;
+  cursor: pointer;
+} */
+
+/* .navbar a:hover {
+	color: var(--main-color);
+} */

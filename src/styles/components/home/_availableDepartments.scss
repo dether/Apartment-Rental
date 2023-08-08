@@ -1,0 +1,250 @@
+.available {
+  background: var(--second-bg-color);
+  
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .card-available.green {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 420px;
+    max-height: 820px; 
+    background: linear-gradient(to bottom, #77dd77, #56aa55);
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px auto;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    transition: background-color 0.3s;
+  
+    .card-title-available {
+      color: var(--text-color);
+      font-size: 3.5em;
+      line-height: normal;
+      font-weight: 700;
+      margin-bottom: 2em;
+
+    }
+
+    .small-desc-availableST {
+      font-size: 2em;
+      font-weight: 400;
+      line-height: 1.5em;
+      margin-bottom: 2em;
+      text-decoration: none;
+      color: var(--text-color);
+      
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .small-desc-availableSM {
+      font-size: 2em;
+      font-weight: 400;
+      line-height: 1.5em;
+      margin-bottom: 2em;
+      text-decoration: none;
+      color: var(--text-color);
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    /* .go-corner-available {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 4.3em;
+      height: 4.3em;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      background: linear-gradient(135deg, #77dd77, #56aa55);
+      border-radius: 0 4px 0 32px;
+    } 
+    
+    .go-arrow-available {
+      margin-top: -4px;
+      margin-right: -4px;
+      color: white;
+      font-size: 2rem;
+    } */
+  }
+
+  .card-available.red {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 420px;
+    max-height: 820px; 
+    background: linear-gradient(to bottom, #740f0f, #e30404);
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px auto;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    
+    .card-title-available {
+      color: var(--text-color);
+      font-size: 3.5em;
+      line-height: normal;
+      font-weight: 700;
+      margin-bottom: 2em;
+
+    }
+
+    .no-departments {
+      font-size: 2em;
+      font-weight: 400;
+      line-height: 1.5em;
+      margin-bottom: 2em;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+/* //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.card-title-available {
+  color: var(--text-color);
+  font-size: 3.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.small-desc-availableST {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.small-desc-availableST:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.small-desc-availableSM {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.small-desc-availableSM:hover {
+  color: black;
+}
+
+.no-departments {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+.go-corner-available {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 4.3em;
+  height: 4.3em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #77dd77, #56aa55);
+  border-radius: 0 4px 0 32px;
+} 
+
+.go-arrow-available {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-size: 2rem;
+}
+
+.card-available {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 420px;
+  max-height: 820px; 
+  background-color: #f2f8f9;
+  border-radius: 10px;
+  padding: 2em 1.2em;
+  margin: 12px auto;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.card-available.green {
+  background: linear-gradient(to bottom, #77dd77, #56aa55);
+}
+
+.card-available.red {
+  background: linear-gradient(to bottom, #740f0f, #e30404);
+}
+
+.card-available:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, #045b04, #92eb90);
+  height: 58px;
+  width: 58px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.card-available:hover:before {
+  transform: scale(28);
+}
+
+.card-available:hover .small-desc-available {
+  transition: all 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-available:hover .card-title-available {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
+
+*/

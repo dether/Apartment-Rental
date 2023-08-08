@@ -1,41 +1,40 @@
 import React from "react";
-import "../../styles/availableDepartments.css"; // Asegúrate de tener el archivo de estilos
 import departmentsSM from "../../utils/departmentsSM.json";
 import departmentsST from "../../utils/departmentsST.json";
 import { Link } from "react-router-dom";
 
 const AvailableDepartments: React.FC = () => {
-	const availableCountST = departmentsSM.departmentsSantaMonica.filter(
+	const availableCountST = departmentsST.departmentsSantaTeresita.filter(
 		(department) => department.available
 	).length;
 
-	const availableCountSM = departmentsST.departmentsSantaTeresita.filter(
+	const availableCountSM = departmentsSM.departmentsSantaMonica.filter(
 		(department) => department.available
 	).length;
 
 	const isAnyAvailable = availableCountST > 0 || availableCountSM > 0;
 	console.log(isAnyAvailable);
 	const title = isAnyAvailable
-		? "Hay departamentos libres"
+		? "Hay departamentos libres!"
 		: "No hay departamentos libres";
 
 	return (
-		<section>
+		<section className="available" id="available">
 			<h2 className="heading">Disponibilidad</h2>
 			<div className={`card-available ${isAnyAvailable ? "green" : "red"}`}>
 				<p className="card-title-available">{title}</p>
 				{isAnyAvailable ? (
 					<>
-          <Link to="/departments/santa-teresita" >
-						<p className="small-desc-availableST">
-							{`Departamentos en Santa Teresita: ${availableCountST}/10`}
-						</p>
-            </Link>
-            <Link to="/departments/santa-monica" >
-						<p className="small-desc-availableSM">
-							{`Departamentos en Santa Monica: ${availableCountSM}/10`}
-						</p>
-            </Link>
+						<Link to="/departments/santa-teresita">
+							<p className="small-desc-availableST">
+								{`Departamentos en Santa Teresita: ${availableCountST}/10`}
+							</p>
+						</Link>
+						<Link to="/departments/santa-monica">
+							<p className="small-desc-availableSM">
+								{`Departamentos en Santa Monica: ${availableCountSM}/10`}
+							</p>
+						</Link>
 						{/* <div
 							className={`go-corner-available ${
 								isAnyAvailable ? "green" : "red"

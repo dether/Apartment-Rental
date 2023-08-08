@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ST from "../../../public/ST/ST.png";
 import SM from "../../../public/SM/SM.png";
-import "../../styles/departments.css";
 import departmentsSM from "../../utils/departmentsSM.json";
 import departmentsST from "../../utils/departmentsST.json";
 
@@ -34,7 +33,7 @@ const Departments: React.FC = () => {
 	return (
 		<div>
 			<section className="departments" id="departments">
-					<h2 className="heading">Departamentos</h2>
+				<h2 className="heading">Departamentos</h2>
 
 				<div className="card-container">
 					<div className="card">
@@ -46,7 +45,7 @@ const Departments: React.FC = () => {
 									Estás buscando un departamento en Santa Teresita? Te
 									presentamos estas excelentes opciones...
 								</p>
-								<p>Departamentos disponibles: <strong>{countAvailableST}</strong>/{countNotAvailableST}</p>
+								<strong>Departamentos disponibles: {countAvailableST}/{countNotAvailableST}</strong>
 							</div>
 						</Link>
 					</div>
@@ -60,7 +59,7 @@ const Departments: React.FC = () => {
 									Estás buscando un departamento en Santa Monica? Te presentamos
 									estas excelentes opciones...
 								</p>
-								<p>Departamentos disponibles: <strong>{countAvailableSM}</strong>/{countNotAvailableSM}</p>
+								<strong>Departamentos disponibles: {countAvailableSM}/{countNotAvailableSM}</strong>
 							</div>
 						</Link>
 					</div>
