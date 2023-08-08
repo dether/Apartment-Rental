@@ -12,7 +12,7 @@
     {
       "type":"Monoambiente",
       "name": "Departamento 2",
-      "available": true,
+      "available": false,
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
@@ -21,7 +21,7 @@
     { 
       "type":"Para dos personas",
       "name": "Departamento 3",
-      "available": true,
+      "available": false,
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye mesada, baño, patio, lavado, agua, luz",
       "dimensions": "35x35 mtrs",

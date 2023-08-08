@@ -15,7 +15,7 @@ SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 const Slider: React.FC = () => {
   return (
-    <>
+    <div className="slider-container">
       <Swiper
         pagination={{
           type: 'progressbar',
@@ -25,18 +25,19 @@ const Slider: React.FC = () => {
         autoplay={{ delay: 2000, disableOnInteraction: false }}
       >
         <div className="slider-content">
-				<h1>Departamentos Vargas</h1>
-				<p>
-					Departamentos Disponibles: Si/No
-				</p>
-			</div>
+          <div className="slider-content-inner">
+            <h1>Departamentos Vargas</h1>
+            <p>Departamentos Disponibles: Si/No</p>
+          </div>
+        </div>
         <SwiperSlide><img src={ST} alt='ST'/></SwiperSlide>
         <SwiperSlide><img src={SM} alt='SM'/></SwiperSlide>
         <SwiperSlide><img src={deptos} alt='deptos'/></SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 
 export default Slider;
+
 

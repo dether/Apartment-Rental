@@ -21,7 +21,7 @@
     {
       "type":"Monoambiente",
       "name": "Departamento 3",
-      "available": true,
+      "available": false,
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
@@ -48,7 +48,7 @@
     {
       "type":"Monoambiente",
       "name": "Departamento 6",
-      "available": true,
+      "available": false,
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
@@ -66,7 +66,7 @@
     { 
       "type":"Tienda",
       "name": "Local 8",
-      "available": true,
+      "available": false,
       "services":["Luz", "Cable", "Agua"],
       "description": "Local comercial incluye un baño, vidriera y dos entradas.",
       "dimensions": "35x35 mtrs",
