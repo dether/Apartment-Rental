@@ -37,10 +37,9 @@ const DepartmentsSM: React.FC = () => {
 	);
 
 	return (
-		<div>
-			<section className="departmentsSm" id="departmentsSm">
-				<div className="filterSm-container">
-					<div className="filters">
+		<div className="departmentsSm" id="departmentsSm">
+			<div className="filterSm-container">
+				<div className="filters">
 					<label htmlFor="typeFilter">Filtrar por Tipo:</label>
 					<select
 						id="typeFilter"
@@ -53,7 +52,7 @@ const DepartmentsSM: React.FC = () => {
 						<option value="Monoambiente">Monoambiente</option>
 						<option value="Para dos personas">Para dos personas</option>
 					</select>
-					
+
 					<label htmlFor="availabilityFilter">
 						Filtrar por Disponibilidad:
 					</label>
@@ -70,17 +69,20 @@ const DepartmentsSM: React.FC = () => {
 						<option value="disponible">Disponible</option>
 						<option value="noDisponible">No disponible</option>
 					</select>
-					</div>
-					<button
-						onClick={() => {
-							setFilterType("todos");
-							setFilterAvailability("todos");
-						}}
-						className="btn"
-					>
-						Limpiar Filtros
-					</button>
 				</div>
+				<button
+					onClick={() => {
+						setFilterType("todos");
+						setFilterAvailability("todos");
+					}}
+					className="btn"
+				>
+					Limpiar Filtros
+				</button>
+			</div>
+
+			<div className="departmentSm-cards">
+				
 				{filteredDepartments.map((department: Department, index: number) => (
 					<div key={index} className="departmentSm-card">
 						<div className="departmentSm-img" key={index}>
@@ -124,7 +126,7 @@ const DepartmentsSM: React.FC = () => {
 						</div>
 					</div>
 				))}
-			</section>
+			</div>
 		</div>
 	);
 };

@@ -31,40 +31,47 @@ const Departments: React.FC = () => {
 	).length;
 
 	return (
-		<div>
-			<section className="departments" id="departments">
-				<h2 className="heading">Departamentos</h2>
+		<div className="departments" id="departments">
+			<h2>Departamentos</h2>
 
-				<div className="card-container">
-					<div className="card">
-						<Link to="/departments/santa-teresita" className="custom-link">
-							<div className="first-content">
-								<img src={ST} alt="Santa Teresita" className="card-img" />
-								<span>Departamentos en Santa Teresita</span>
-								<p>
-									Estás buscando un departamento en Santa Teresita? Te
-									presentamos estas excelentes opciones...
-								</p>
-								<strong>Departamentos disponibles: {countAvailableST}/{countNotAvailableST}</strong>
-							</div>
-						</Link>
-					</div>
+			<div className="card-container">
 
-					<div className="card">
-						<Link to="/departments/santa-monica" className="custom-link">
-							<div className="first-content">
-								<img src={SM} alt="Santa Monica" className="card-img" />
-								<span>Departamentos en Santa Monica</span>
-								<p>
-									Estás buscando un departamento en Santa Monica? Te presentamos
-									estas excelentes opciones...
-								</p>
-								<strong>Departamentos disponibles: {countAvailableSM}/{countNotAvailableSM}</strong>
-							</div>
-						</Link>
-					</div>
+				<div className="card">
+					<Link to="/departments/santa-teresita" className="custom-link">
+						<div className="first-content">
+							<img src={ST} alt="Santa Teresita" className="card-img" />
+							<span>Departamentos en Santa Teresita</span>
+							<p>
+								Estás buscando un departamento en Santa Teresita? Te presentamos
+								estas excelentes opciones...
+							</p>
+							<strong>
+								Departamentos disponibles: {countAvailableST}/
+								{countNotAvailableST}
+							</strong>
+						</div>
+					</Link>
 				</div>
-			</section>
+
+				<div className="card">
+					<Link to="/departments/santa-monica" className="custom-link">
+						<div className="first-content">
+							<img src={SM} alt="Santa Monica" className="card-img" />
+							<span>Departamentos en Santa Monica</span>
+							<p>
+								Estás buscando un departamento en Santa Monica? Te presentamos
+								estas excelentes opciones...
+							</p>
+							<strong>
+								Departamentos disponibles: {countAvailableSM}/
+								{countNotAvailableSM}
+							</strong>
+						</div>
+					</Link>
+				</div>
+
+			</div>
+			
 		</div>
 	);
 };

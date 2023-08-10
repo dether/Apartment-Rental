@@ -20,7 +20,7 @@ const AvailableDepartments: React.FC = () => {
 
 	return (
 		<section className="available" id="available">
-			<h2 className="heading">Disponibilidad</h2>
+			<h2 >Disponibilidad</h2>
 			<div className={`card-available ${isAnyAvailable ? "green" : "red"}`}>
 				<p className="card-title-available">{title}</p>
 				{isAnyAvailable ? (

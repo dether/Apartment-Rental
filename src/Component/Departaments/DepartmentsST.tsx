@@ -37,8 +37,7 @@ const DepartmentsST: React.FC = () => {
 	);
 
 	return (
-		<div>
-			<section className="departmentsSt" id="departmentsSt">
+			<div className="departmentsSt" id="departmentsSt">
 				<div className="filterSt-container">
 					<div className="filters">
 						<label htmlFor="typeFilter">Filtrar por Tipo:</label>
@@ -83,6 +82,7 @@ const DepartmentsST: React.FC = () => {
 						</button>
 					
 				</div>
+				<div className="departmentSt-cards">
 				{filteredDepartments.map((department: Department, index: number) => (
 					<div key={index} className="departmentSt-card">
 						<div className="departmentSt-img">
@@ -126,7 +126,7 @@ const DepartmentsST: React.FC = () => {
 						</div>
 					</div>
 				))}
-			</section>
+				</div>
 		</div>
 	);
 };

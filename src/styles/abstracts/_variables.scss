@@ -6,9 +6,14 @@
 	--font-arvo: "Roboto", sans-serif;
 
 	//colors
-	--bg-color: #2ec4b6;
-	--second-bg-color: #cbf3f0;
-	--text-color: #000000;
-	--main-color: #ff9f1c;
-	--second-main-color: #ffbf69;
-};
+	--bg-color: #354F52; //Color Principal
+	--second-bg-color: #6A8B75; //Color Secundario
+	--text-color:  #F7F7F7; //Color de Resalte
+	--variante: #D15736;
+	--variante-text: #F7F7F7;
+	--main-color:  #E5A953;//Color de Resalte
+	--second-main-color:  #2B2B2B; //Color de Contraste
+};/* align-items: center;
+width: calc((100% - 16px*2)/3);
+    --bui_spacing_4x: 16px;
+*/

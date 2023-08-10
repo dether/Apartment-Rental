@@ -7,13 +7,13 @@
 @use "./base/resets";
 
 //! components
-@use "./components/navbar";
+@use "./components/nav";
 @use "./components/contact";
 @use "./components/locations.scss";
 @use "./components/footer";
 @use "./components/home/home";
 @use "./components/home/slider";
 @use "./components/home/availableDepartments";
-@use "./components/departments/departments.scss";
-@use "./components/departments/departmentsSm.scss";
+@use "./components/departments/departments";
+@use "./components/departments/departmentsSm";
 @use "./components/departments/departmentsSt";
