@@ -54,11 +54,11 @@
 
 		&:hover {
 			text-decoration: none;
-			color: var(--variante);
+			color: var(--main-color);
 		}
 
 		&.active {
-			color: var(--variante);
+			color: var(--main-color);
 		}
     &.open {
       margin-top: 100rem;

@@ -179,11 +179,10 @@ const Contact: React.FC = () => {
 
   return (
     <section className="contact" id="contact">
-      <h2 className="heading">
+      <h2 >
       Contacto
       </h2>
 
-      <div className="contact-container">
         <form ref={form} action="#" onSubmit={handleSubmit}>
           
           <div className="input-box">
@@ -259,7 +258,7 @@ const Contact: React.FC = () => {
             Enviar email
           </button>
         </form>
-      </div>
+
     </section>
   );
 };

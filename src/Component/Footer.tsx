@@ -1,23 +1,29 @@
 import React from 'react';
-/* import { Link } from "react-scroll/modules";
-import arrow from "../../public/iconos/arrow.svg" */
-import whatsapp from "../../public/iconos/whatsapp.svg"
+import whatsapp from "../../public/iconos/whatsapp.svg";
+import gmail from "../../public/iconos/gmail.svg";
+import cel from "../../public/iconos/cel.svg";
+import location from "../../public/iconos/location.svg";
+
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-text">
         <p>Copyright © 2023 por Alejandro Vargas | Reservados todos los derechos</p>
       </div>
-
-      {/* <div className="footer-iconTop">
-      <Link to="home" smooth={true} offset={-100}>
-        <img className="footer-icon" src={arrow} alt="arrow-up"/>
-      </Link>
-      </div> */}
-      <div className="social-media">
+      <div className="information-media">
           <a href="https://wa.me/+5493644270614" target="_blank" rel="noopener noreferrer">
-            <img className="red-social" src={whatsapp} alt="whatsapp" />
+            <img className="information-contact" src={whatsapp} alt="whatsapp" />
           </a>
+            <img className="information-contact" src={gmail} alt="gmail" />
+            <p> dether2011@gmail.com </p>
+            <img className="information-contact" src={cel} alt="phone" />
+            <p> +54 3644 130578 </p>
+
+            <a href="/locations">
+            <img className="information-contact" src={location} alt="location" />
+            <p> Ubicación </p>
+            </a>
+
         </div>
     </footer>
   )

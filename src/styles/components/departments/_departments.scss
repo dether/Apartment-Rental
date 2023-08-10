@@ -1,6 +1,11 @@
 .departments {
-  background: var(--second-bg-color);
-  padding-top: 8rem;
+  display: grid;
+	/* gap: 2em; */
+	background: var(--second-bg-color);
+	padding-top: 6rem;
+	align-content: center;
+	justify-items: center;
+
   h2 {
     text-align: center;
     font-size: 3rem;
@@ -16,6 +21,7 @@
     justify-content: center;
     gap: 3rem;
     padding: 0 1rem;
+    margin: 1rem auto;
 
     .card {
       width: calc(33.33% - 1rem); /* Distribución en tres columnas, con espacio entre las tarjetas */
@@ -36,9 +42,10 @@
       &:hover {
         border-radius: 15px;
         cursor: pointer;
-        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-        background: var(--variante);
         transform: scale(1.05);
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+        background: var(--main-color);
+        transition: 0.4s ease-in-out
       }
 
       .custom-link {

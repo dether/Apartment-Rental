@@ -8,3 +8,11 @@ body {
   background: var(--second-bg-color);
   color: var(--text-color);
 }
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Establece la altura mínima de la ventana
+}
+.content {
+  flex-grow: 1; // Permite que el contenido ocupe todo el espacio disponible
+}

@@ -1,5 +1,66 @@
 .location {
 	background: var(--second-bg-color);
+	padding: 12rem 0;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+
+	h2 {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 2rem;
+		position: relative;
+		z-index: 1;
+	}
+
+	.map-container {
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.map-ST,
+		.map-SM {
+			flex: 1;
+			padding: 1rem;
+			text-align: center;
+
+			.map-title {
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			.iframe-container {
+				width: 100%;
+				padding-top: 100%; /* Aspect ratio trick for square shape */
+				position: relative;
+
+				iframe {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border: 0;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		.map-container {
+			flex-direction: column;
+
+			.map-ST,
+			.map-SM {
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
+/* .location {
+	background: var(--second-bg-color);
 	padding-top: 9rem;
 	display: flex;
 	flex-direction: column;
@@ -43,3 +104,4 @@
     }
 	}
 }
+ */

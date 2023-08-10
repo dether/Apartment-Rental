@@ -35,7 +35,8 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
 
         &:hover {
-          background-color: var(--variante);
+          background: var(--main-color);
+        transition: 0.4s ease-in-out
         }
 
         option {
@@ -55,7 +56,8 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
 
       &:hover {
-        background-color: var(--variante);
+        background: var(--main-color);
+        transition: 0.4s ease-in-out
       }
     }
   }

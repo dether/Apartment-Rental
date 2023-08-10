@@ -1,3 +1,4 @@
+
 {
   "departmentsSantaTeresita": [
     {
@@ -7,7 +8,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
+      "img": "../../public/ST/ST8.jpg"
     },
     {
       "type":"Monoambiente",
@@ -16,7 +17,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
+      "img": "../../public/ST/ST2.jpg"
     },
     {
       "type":"Monoambiente",
@@ -25,7 +26,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
+      "img": "../../public/ST/ST3.jpg"
     },
     {
       "type":"Monoambiente",
@@ -34,7 +35,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
+      "img": "../../public/ST/ST4.jpg"
     },
     {
       "type":"Monoambiente",
@@ -43,7 +44,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
+      "img": "../../public/ST/ST5.jpg"
     },
     {
       "type":"Monoambiente",
@@ -52,7 +53,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.kiteprop.com%2Fkp%2Fproperties%2F12122%2F1f12c1%2Flg%2F1f12c12082114357a52a3d8df5458626.jpg"
+      "img": "../../public/ST/ST6.jpg"
     },
     { 
       "type":"Para dos personas",
@@ -61,7 +62,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye mesada, baño, patio, lavado, agua, luz",
       "dimensions": "35x35 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.tokkobroker.com%2Fpictures%2F20423046796908484391545907069030572055494643213197549376987739746881500522659.jpg"
+      "img": "../../public/ST/ST7.jpg"
     },
     { 
       "type":"Tienda",
@@ -70,7 +71,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Local comercial incluye un baño, vidriera y dos entradas.",
       "dimensions": "35x35 mtrs",
-      "img": "https://www.buenacuerdo.com.ar/ws/image.php?img=https%3A%2F%2Fstatic.tokkobroker.com%2Fpictures%2F20423046796908484391545907069030572055494643213197549376987739746881500522659.jpg"
+      "img": "../../public/ST/LOCAL.jpg"
     }
   ]
 }

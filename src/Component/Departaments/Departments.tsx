@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ST from "../../../public/ST/ST.png";
-import SM from "../../../public/SM/SM.png";
+import ST1 from "../../../public/ST/ST1.jpg";
+import SM1 from "../../../public/SM/SM1.jpg";
 import departmentsSM from "../../utils/departmentsSM.json";
 import departmentsST from "../../utils/departmentsST.json";
 
@@ -31,7 +31,7 @@ const Departments: React.FC = () => {
 	).length;
 
 	return (
-		<div className="departments" id="departments">
+		<section className="departments" id="departments">
 			<h2>Departamentos</h2>
 
 			<div className="card-container">
@@ -39,7 +39,7 @@ const Departments: React.FC = () => {
 				<div className="card">
 					<Link to="/departments/santa-teresita" className="custom-link">
 						<div className="first-content">
-							<img src={ST} alt="Santa Teresita" className="card-img" />
+							<img src={ST1} alt="Santa Teresita" className="card-img" />
 							<span>Departamentos en Santa Teresita</span>
 							<p>
 								Estás buscando un departamento en Santa Teresita? Te presentamos
@@ -56,7 +56,7 @@ const Departments: React.FC = () => {
 				<div className="card">
 					<Link to="/departments/santa-monica" className="custom-link">
 						<div className="first-content">
-							<img src={SM} alt="Santa Monica" className="card-img" />
+							<img src={SM1} alt="Santa Monica" className="card-img" />
 							<span>Departamentos en Santa Monica</span>
 							<p>
 								Estás buscando un departamento en Santa Monica? Te presentamos
@@ -72,7 +72,7 @@ const Departments: React.FC = () => {
 
 			</div>
 			
-		</div>
+		</section>
 	);
 };
 

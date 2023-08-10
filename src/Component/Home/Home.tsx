@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "./Slider";
 import deptos from "../../../public/deptos.png";
 import AvailableDepartments from "./AvailableDepartments";
-import Footer from "../Footer";
 
 const Home: React.FC = () => {
 	return (
@@ -29,7 +28,6 @@ const Home: React.FC = () => {
 				</div>
 			</section>
 			<AvailableDepartments />
-			<Footer />
 		</div>
 	);
 };
