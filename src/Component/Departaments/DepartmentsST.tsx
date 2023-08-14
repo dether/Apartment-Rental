@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import departments from "../../utils/departmentsST.json";
-import light from "../../../public/iconos/Light bulb.svg";
-import water from "../../../public/iconos/Tap Water Drink.svg";
-import cable from "../../../public/iconos/cable tv.svg";
-import Bed from "../../../public/iconos/Bed.svg";
+import light from "../../../public/icon/Light bulb.svg";
+import water from "../../../public/icon/Tap Water Drink.svg";
+import cable from "../../../public/icon/cable tv.svg";
+import Bed from "../../../public/icon/Bed.svg";
 
 interface Department {
 	type: string;
@@ -38,6 +38,7 @@ const DepartmentsST: React.FC = () => {
 
 	return (
 			<div className="departmentsSt" id="departmentsSt">
+
 				<div className="filterSt-container">
 					<div className="filters">
 						<label htmlFor="typeFilter">Filtrar por Tipo:</label>
@@ -82,6 +83,7 @@ const DepartmentsST: React.FC = () => {
 						</button>
 					
 				</div>
+
 				<div className="departmentSt-cards">
 				{filteredDepartments.map((department: Department, index: number) => (
 					<div key={index} className="departmentSt-card">

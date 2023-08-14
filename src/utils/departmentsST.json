@@ -3,6 +3,7 @@
   "departmentsSantaTeresita": [
     {
       "type":"Monoambiente",
+      "location": "Santa Teresita",
       "name": "Departamento 1",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -12,6 +13,7 @@
     },
     {
       "type":"Monoambiente",
+      "location": "Santa Teresita",
       "name": "Departamento 2",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -21,6 +23,7 @@
     },
     {
       "type":"Monoambiente",
+      "location": "Santa Teresita",
       "name": "Departamento 3",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -30,6 +33,7 @@
     },
     {
       "type":"Monoambiente",
+      "location": "Santa Teresita",
       "name": "Departamento 4",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -39,6 +43,7 @@
     },
     {
       "type":"Monoambiente",
+      "location": "Santa Teresita",
       "name": "Departamento 5",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -48,6 +53,7 @@
     },
     {
       "type":"Monoambiente",
+      "location": "Santa Teresita",
       "name": "Departamento 6",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -57,6 +63,7 @@
     },
     { 
       "type":"Para dos personas",
+      "location": "Santa Teresita",
       "name": "Departamento 7",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -66,6 +73,7 @@
     },
     { 
       "type":"Tienda",
+      "location": "Santa Teresita",
       "name": "Local 8",
       "available": false,
       "services":["Luz", "Cable", "Agua"],

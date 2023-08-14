@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import departments from "../../utils/departmentsSM.json";
-import light from "../../../public/iconos/Light bulb.svg";
-import water from "../../../public/iconos/Tap Water Drink.svg";
-import cable from "../../../public/iconos/cable tv.svg";
-import Bed from "../../../public/iconos/Bed.svg";
+import light from "../../../public/icon/Light bulb.svg";
+import water from "../../../public/icon/Tap Water Drink.svg";
+import cable from "../../../public/icon/cable tv.svg";
+import Bed from "../../../public/icon/Bed.svg";
 
 interface Department {
 	type: string;

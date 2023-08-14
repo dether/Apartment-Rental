@@ -14,12 +14,13 @@ const Nav: React.FC = () => {
 	};
 
 	return (
+		<div>
 		<nav className={`navbar ${isNavOpen ? "open" : ""}`}>
 			{/* <div className="logo" >
 				Logo
 			</div> */}
 			<div className={`nav-links ${isNavOpen ? "open" : ""}`}>
-				<NavLink to="/departments" className="nav-link" onClick={closeNav}>
+				<NavLink to="/departamentos" className="nav-link" onClick={closeNav}>
 					Departamentos
 				</NavLink>
 				<NavLink to="/services" className="nav-link" onClick={closeNav}>
@@ -42,6 +43,7 @@ const Nav: React.FC = () => {
 				<div className={`bar ${isNavOpen ? "open" : ""}`}></div>
 			</div>
 		</nav>
+		</div>
 	);
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import whatsapp from "../../public/iconos/whatsapp.svg";
-import gmail from "../../public/iconos/gmail.svg";
-import cel from "../../public/iconos/cel.svg";
-import location from "../../public/iconos/location.svg";
+import whatsapp from "../../public/icon/whatsapp.svg";
+import gmail from "../../public/icon/gmail.svg";
+import cel from "../../public/icon/cel.svg";
+import location from "../../public/icon/location.svg";
 
 const Footer: React.FC = () => {
   return (

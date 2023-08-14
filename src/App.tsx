@@ -2,13 +2,14 @@ import "./styles/index.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Nav from "./Component/Nav";
-import Departments from "./Component/Departaments/Departments";
+/* import Departments from "./Component/Departaments/Departments"; */
 import DepartmentsST from "./Component/Departaments/DepartmentsST";
 import DepartmentsSM from "./Component/Departaments/DepartmentsSM";
 import Contact from "./Component/Contact";
 import Location from "./Component/Location";
 import Footer from "./Component/Footer";
 import Services from "./Component/Services";
+import Departamentos from "./Component/Departments2";
 
 function App() {
 	return (
@@ -17,7 +18,7 @@ function App() {
 			<div className="content">
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/departments" element={<Departments />} />
+					<Route path="/departamentos" element={<Departamentos />} />
 					<Route
 						path="/departments/santa-teresita"
 						element={<DepartmentsST />}

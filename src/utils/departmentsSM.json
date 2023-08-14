@@ -2,6 +2,7 @@
   "departmentsSantaMonica": [
     {
       "type":"Monoambiente",
+      "location": "Santa Monica",
       "name": "Departamento 1",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -11,6 +12,7 @@
     },
     {
       "type":"Monoambiente",
+      "location": "Santa Monica",
       "name": "Departamento 2",
       "available": true,
       "services":["Luz", "Cable", "Agua"],
@@ -20,6 +22,7 @@
     },
     { 
       "type":"Para dos personas",
+      "location": "Santa Monica",
       "name": "Departamento 3",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
@@ -29,6 +32,7 @@
     },
     { 
       "type":"Para dos personas",
+      "location": "Santa Monica",
       "name": "Departamento 4",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
