@@ -1,22 +1,22 @@
-.departamentos {
+.departaments {
 	display: grid;
-	
-	/* gap: 2em; */
+	gap: 2em;
 	background: var(--second-bg-color);
-	padding-top: 12rem;
+	padding-top: 11rem;
 	margin-bottom: 12rem;
 	align-content: center;
 	justify-items: center;
 
-	.departamentos-filter{
-		
-		padding-top: 4rem;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    margin-bottom: 2em;
-    justify-content: center;
-    flex-wrap: wrap;
+	h2{
+		font-size: 3rem;
+	}
+	.departaments-filter {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		margin-bottom: 2em;
+		justify-content: center;
+		flex-wrap: wrap;
 
 		h2 {
 			font-size: 2rem;
@@ -32,7 +32,7 @@
 
 			&:hover {
 				background: var(--main-color);
-			transition: 0.4s ease-in-out
+				transition: 0.4s ease-in-out;
 			}
 
 			option {
@@ -40,69 +40,82 @@
 			}
 		}
 		.btn {
-      padding: 0.5em 1em;
-      font-size: 1.6rem;
-      border: none;
-      border-radius: 5px;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+			padding: 0.5em 1em;
+			font-size: 1.6rem;
+			border: none;
+			border-radius: 5px;
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			cursor: pointer;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
 
-      &:hover {
-        background: var(--main-color);
-        transition: 0.4s ease-in-out
-      }
-    }
+			&:hover {
+				background: var(--main-color);
+				transition: 0.4s ease-in-out;
+			}
+		}
 	}
-	.departamentos-option {
-		background: blue;
-		.departamentos-container {
-			/* background: blue; */
-			display: grid;
-			gap: 3rem;
-			padding: 0 1rem;
-			margin: 1rem auto;
+	.departaments-option {
+		border: 3px solid black;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		.departaments-container {
+			display: flex;
 			justify-items: center;
-			grid-template-columns: repeat(3, 1fr);
 
-			.departamentos-img {
-				width: 100%;
-				max-width: 500px;
-				min-width: 200px;
-				height: 100%;
-	
+			.departaments-img {
+				width: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
 				img {
 					width: 100%;
 					height: 100%;
+					max-width: 500px;
+					max-height: 100%;
+					border-top-left-radius: 15px;
+					border-bottom-left-radius: 15px;
+					object-fit: cover; // Ajusta la imagen a la altura del contenedor
 				}
 			}
-			.departamentos-info{
-				display:grid;
+			.departaments-info {
+				display: flex;
 				place-content: center;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-items: stretch;
+				margin: 0 2rem;
+				padding: 2rem 0;
+
 				h2 {
 					text-align: center;
 					font-size: 3rem;
-					margin-bottom: 2rem;
-					position: relative; /* Agregar posición relativa para z-index */
-					z-index: 1; /* Asegurar que el título esté por encima de las tarjetas */
+					margin-bottom: 1rem;
 				}
-				h1{
+				h1 {
 					font-size: 2rem;
 				}
-				p{
+				p {
 					margin-top: 1rem;
-					text-align: center;
+					text-align: left;
 					font-size: 1.5rem;
 					font-weight: 300;
-				}
-				
-				.services-icons{
-					margin-top: 1rem;
-					display:flex;
-					place-content: center;
-					gap:2rem;
+					margin-bottom: 1rem;
 
+					a {
+						text-decoration: none;
+						color: var(--main-color);
+					}
+				}
+
+				.services-icons {
+					margin-top: 1rem;
+					margin-bottom: 1rem;
+					display: flex;
+					place-content: left;
+					gap: 2rem;
 				}
 
 				.btn {
@@ -115,36 +128,61 @@
 					color: var(--text-color);
 					cursor: pointer;
 					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
-		
+
 					&:hover {
 						background: var(--main-color);
-						transition: 0.4s ease-in-out
+						transition: 0.4s ease-in-out;
+					}
+					a {
+						color: var(--text-color);
+						text-decoration: none;
 					}
 				}
 			}
 		}
-		.departamentos-ubicacion {
-			display: grid;
-			/* gap: 2em; */
-			background: var(--second-bg-color);
-			padding-top: rem;
-			align-content: center;
-			justify-items: center;
-	
-			h2 {
-				text-align: center;
-				font-size: 3rem;
-				margin-bottom: 2rem;
-				position: relative; /* Agregar posición relativa para z-index */
-				z-index: 1; /* Asegurar que el título esté por encima de las tarjetas */
-			}
-			p {
-				font-size: 1.5rem;
-				text-align: center;
-				margin-bottom: 2rem;
-			}
-			
-		}
-	}
+		/* .departamentos-ubicacion {
+			display: flex;
+			padding-top: 2rem;
+			flex-direction: row;
+			align-items: center;
+			gap: 2rem;
+			justify-content: space-around;
 
+			.ubicacion-info {
+				
+				h2 {
+					text-align: center;
+					font-size: 3rem;
+					margin-bottom: 2rem;
+					position: relative;
+					z-index: 1; 
+				}
+				a {
+					text-decoration: none;
+					color: var(--text-color);
+				}
+				p {
+					font-size: 1.5rem;
+					text-align: center;
+					margin-bottom: 2rem;
+				}
+				.btn {
+					padding: 0.5em 1em;
+					font-size: 1.6rem;
+					border: none;
+					border-radius: 5px;
+					background-color: var(--bg-color);
+					color: var(--text-color);
+					cursor: pointer;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+		
+					&:hover {
+						background: var(--main-color);
+						transition: 0.4s ease-in-out;
+					}
+					
+				}
+			}
+		} */
+	}
 }

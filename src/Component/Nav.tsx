@@ -20,7 +20,7 @@ const Nav: React.FC = () => {
 				Logo
 			</div> */}
 			<div className={`nav-links ${isNavOpen ? "open" : ""}`}>
-				<NavLink to="/departamentos" className="nav-link" onClick={closeNav}>
+				<NavLink to="/departaments" className="nav-link" onClick={closeNav}>
 					Departamentos
 				</NavLink>
 				<NavLink to="/services" className="nav-link" onClick={closeNav}>
