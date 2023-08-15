@@ -1,141 +1,146 @@
 .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background: var(--second-bg-color);
-  display: grid;
-	align-content: center;
-	justify-items: center;
+  padding: 4rem 0;
+  /* padding-top: 11rem; */
+	/* margin-bottom: 12rem; */
 
-  h2 {
+	h2 {
+		font-size: 3rem;
+    margin-bottom: 1rem; /* Ajusta el margen inferior según tus necesidades */
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  form {
-    max-width: 70rem;
-		width: 100%;
-    margin: 1rem auto;
+	}
+	p {
+		font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 2rem; /* Ajusta el margen inferior según tus necesidades */
     text-align: center;
-    margin-bottom: 3rem;
-		
+	}
+	/* .lineal {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
-    .input-box {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-
-      input {
-        width: 100%;
-        padding: 1.5rem;
-        font-size: 1.6rem;
-        color: var(--text-color);
-        background: var(--bg-color);
-        border-radius: 0.8rem;
-        margin: 0.7rem 0;
-      }
-
-    }
-
-		textarea {
-			width: 100%;
-			padding: 1.5rem;
-			font-size: 1.6rem;
-			color: var(--text-color);
-			background: var(--bg-color);
-			border-radius: 0.8rem;
-			margin: 0.7rem 0;
-			resize: none; /* Remove the textarea's resize handle */
-		}
-		.error-message-textarea{
-			font-size: 1.3rem; /* Reducimos el tamaño del mensaje para mantenerlo más discreto */
-			color: red;
-			margin-top: 4px; /* Agregamos un pequeño margen superior */
-			display: flex;
-			flex-direction: column; /* Agregamos dirección de columna para centrar los elementos */
-			align-items: center; /* Centramos los elementos horizontalmente */
-		}
-		
-    .btn {
-      padding: 0.5em 1em;
-      font-size: 1.6rem;
-      border: none;
-      border-radius: 5px;
-      background-color: var(--bg-color);
+    p {
+      font-size: 1.2rem;
       color: var(--text-color);
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
-
-      &:hover {
-        background-color: var(--variante);
-      }
-    }
-
-    .btn-disabled {
-      background-color: var(--bg-color);
-      margin-top: 2rem;
-      cursor:no-drop ;
-			box-shadow: none;
-
-      &:hover {
-        box-shadow: none;
-				background-color: var(--bg-color);
-      }
-    }
-
-    /* Estilo para el input de número de móvil */
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
       margin: 0;
     }
+  } */
+	.contact-container {
+		max-width: 960px;
+		margin: 1rem auto;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+		background: var(--second-bg-color);
+		box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+		border-radius: 0.5rem;
+		overflow: hidden;
 
-    /* Estilo para el autocompletado */
-    .input-box input:-webkit-autofill,
-    textarea:-webkit-autofill {
-      -webkit-text-fill-color: var(--text-color);
-      -webkit-box-shadow: 0 0 0px 1000px var(--second-bg-color) inset;
-      transition: background-color 5000s ease-in-out 0s;
-    }
+		.form-container {
+			padding: 20px;
 
-    /* Estilos para los mensajes de error */
-    .error-message {
-      font-size: 14px;
-      color: red;
-      margin-top: 4px;
-    }
+			h2 {
+				font-size: 2rem;
+				font-weight: 600;
+				margin-bottom: 1rem;
+			}
 
-    /* Estilos para los iconos de éxito y error en SweetAlert */
-    .swal-custom-style {
-      background-color: var(--second-bg-color);
-      color: var(--text-color);
-      width: 20%;
-      height: 60%;
-    }
+			.contact-form input:-webkit-autofill,
+			textarea:-webkit-autofill {
+				-webkit-text-fill-color: var(--text-color);
+				-webkit-box-shadow: 0 0 0px 1000px var(--main-color) inset;
+				transition: background-color 5000s ease-in-out 0s;
+			}
+			.contact-form {
+				display: grid;
+				row-gap: 1rem;
 
-    .swal-icon--success .swal-icon--success__line {
-      stroke: #00ff00;
-    }
+				input,
+				textarea {
+					width: 100%;
+					border: none;
+					outline: none;
+					background: var(--main-color);
+					padding: 10px;
+					font-size: 1.6rem;
+					color: var(--text-color);
+					border-radius: 0.4rem;
+				}
+				textarea {
+					resize: none;
+					height: 200px;
+				}
 
-    .swal-icon--error .swal-icon--error__line {
-      stroke: var(--main-color);
-    }
+				.error-message {
+					font-size: 14px;
+					color: red;
+					margin-top: 4px;
+				}
 
-    /* Estilos para los contenedores que agrupan inputs con sus mensajes de error */
-    .input-container {
-      width: 49%;
-      position: relative;
+				.btn {
+					padding: 0.5em 1em;
+					font-size: 1.6rem;
+					border: none;
+					outline: none;
+					border-radius: 5px;
+					background-color: var(--bg-color);
+					color: var(--text-color);
+					cursor: pointer;
+					text-transform: uppercase;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
 
-      .error-message {
-        font-size: 1.3rem;
-        color: red;
-        margin-top: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  }
+					&:hover {
+						transition: 0.3s all linear;
+						background-color: var(--main-color);
+					}
+				}
+
+				.btn-disabled {
+					background-color: var(--bg-color);
+					margin-top: 2rem;
+					cursor: no-drop;
+					box-shadow: none;
+
+					&:hover {
+						box-shadow: none;
+						background-color: var(--bg-color);
+					}
+				}
+			}
+		}
+		.map {
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	@media (max-width: 964px) {
+		.contact-container {
+			margin: 0 auto;
+			margin-top: 3rem;
+			width: 90%;
+		}
+	}
+	@media (max-width: 700px) {
+		padding-top: 8rem;
+		/* margin-bottom: 12rem; */
+		.contact-container {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+			/* margin-top: 5rem; */
+			margin-bottom: 10rem;
+		}
+		.map {
+			height: 400px;
+		}
+	}
+	@media (max-width: 700px) {
+	}
 }
-
-

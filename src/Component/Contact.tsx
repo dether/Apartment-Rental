@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
+import location2 from "../../public/icon/location2.svg"
+import phone from "../../public/icon/phone.svg"
+import gmail from "../../public/icon/gmail.svg"
 
 const id = import.meta.env.VITE_ID;
 const service = import.meta.env.VITE_SERVICE;
@@ -9,38 +12,34 @@ const template = import.meta.env.VITE_TEMPLATE;
 emailjs.init(id);
 
 interface FormErrors {
-  fullName: string;
-  email: string;
-  mobileNumber: string;
-  emailSubject: string;
-  message: string;
+	fullName: string;
+	email: string;
+	message: string;
 }
 
 const Contact: React.FC = () => {
-  const form = useRef<HTMLFormElement>(null);
-  const [isButtonDisabled, setButtonDisabled] = useState(true);
-  const [errors, setErrors] = useState<FormErrors>({
-    fullName: "",
-    email: "",
-    mobileNumber: "",
-    emailSubject: "",
-    message: "",
-  });
+	const form = useRef<HTMLFormElement>(null);
+	const [isButtonDisabled, setButtonDisabled] = useState(true);
+	const [errors, setErrors] = useState<FormErrors>({
+		fullName: "",
+		email: "",
+		message: "",
+	});
 
-  const handleSubmit = (event: React.FormEvent) => {
+	const handleSubmit = (event: React.FormEvent) => {
 		event.preventDefault();
 		if (form.current) {
-			const formElements = Array.from(form.current.elements) as HTMLInputElement[];
-	
+			const formElements = Array.from(
+				form.current.elements
+			) as HTMLInputElement[];
+
 			// Creamos un objeto temporal para almacenar los errores
 			let tempErrors: FormErrors = {
 				fullName: "",
 				email: "",
-				mobileNumber: "",
-				emailSubject: "",
 				message: "",
 			};
-	
+
 			// Validar cada campo y almacenar los errores en el objeto temporal
 			formElements.forEach((element) => {
 				if (element.name === "from_name" && element.value.trim() === "") {
@@ -54,213 +53,203 @@ const Contact: React.FC = () => {
 						tempErrors.email = "Dirección de email inválido";
 					}
 				}
-				if (element.name === "mobile_number") {
-					const mobileRegex = /^\d{6,13}$/;
-					if (element.value.trim() === "") {
-						tempErrors.mobileNumber = "Agrega un número de teléfono o celular";
-					} else if (!mobileRegex.test(element.value)) {
-						tempErrors.mobileNumber = "Número de teléfono o celular inválido";
-					}
-				}
-				if (element.name === "email_subject" && element.value.trim() === "") {
-					tempErrors.emailSubject = "Agrega un asunto del email";
-				}
 				if (element.name === "mensaje") {
 					if (element.value.trim() === "") {
 						tempErrors.message = "Agrega un mensaje";
 					} else if (element.value.length > 100) {
-						tempErrors.message = "El mensaje no debe superar los 100 caracteres";
+						tempErrors.message =
+							"El mensaje no debe superar los 100 caracteres";
 					}
 				}
 			});
-	
+
 			// Actualizamos el estado con todos los errores al final de la validación
 			setErrors(tempErrors);
-	
+
 			// Verificamos si hay algún error para detener el envío del formulario
 			const hasErrors = Object.values(tempErrors).some((error) => error !== "");
 			if (hasErrors) {
 				return;
 			}
-	
+
 			handleFormSubmit();
 		}
 	};
 
-  const handleFormSubmit = () => {
-    if (form.current) {
-      emailjs
-        .sendForm(service, template, form.current, id)
-        .then((result) => {
-          Swal.fire({
-            position: "center",
-            icon: "success",
-            iconColor: "#00ff00",
-            title: "¡Mensaje enviado con éxito!",
-            showConfirmButton: false,
-            timer: 2500,
-            customClass: {
-              popup: "swal-custom-style",
-            },
-          });
-          console.log(result.text);
-        })
-        .catch((error) => {
-          console.error("Error al enviar mensaje:", error);
-          Swal.fire({
-            position: "center",
-            icon: "error",
-            iconColor: "var(--main-color)",
-            title: "Error, no se pudo enviar el mensaje.",
-            showConfirmButton: false,
-            timer: 2500,
-            customClass: {
-              popup: "swal-custom-style",
-            },
-          });
-          console.log(error.text);
-        });
-      form.current.reset();
-    }
-  };
+	const handleFormSubmit = () => {
+		if (form.current) {
+			emailjs
+				.sendForm(service, template, form.current, id)
+				.then((result) => {
+					Swal.fire({
+						position: "center",
+						icon: "success",
+						iconColor: "#00ff00",
+						title: "¡Mensaje enviado con éxito!",
+						showConfirmButton: false,
+						timer: 2500,
+						customClass: {
+							popup: "swal-custom-style",
+						},
+					});
+					console.log(result.text);
+				})
+				.catch((error) => {
+					console.error("Error al enviar mensaje:", error);
+					Swal.fire({
+						position: "center",
+						icon: "error",
+						iconColor: "var(--main-color)",
+						title: "Error, no se pudo enviar el mensaje.",
+						showConfirmButton: false,
+						timer: 2500,
+						customClass: {
+							popup: "swal-custom-style",
+						},
+					});
+					console.log(error.text);
+				});
+			form.current.reset();
+		}
+	};
 
-	const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+	const handleChange = (
+		event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
 		const name = event.target.name;
 		const value = event.target.value;
 
-    switch (name) {
+		switch (name) {
 			case "from_name":
 				setErrors((prevErrors) => ({
 					...prevErrors,
 					fullName: value.trim() === "" ? "Agrega un nombre" : "",
 				}));
 				break;
-	
+
 			case "user_email":
 				const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 				setErrors((prevErrors) => ({
 					...prevErrors,
-					email: value.trim() === "" ? "Agrega una dirección de email" : emailRegex.test(value) ? "" : "Dirección de email inválido",
+					email:
+						value.trim() === ""
+							? "Agrega una dirección de email"
+							: emailRegex.test(value)
+							? ""
+							: "Dirección de email inválido",
 				}));
 				break;
-	
-			case "mobile_number":
-				const mobileRegex = /^\d{6,13}$/;
-				setErrors((prevErrors) => ({
-					...prevErrors,
-					mobileNumber: value.trim() === "" ? "Agrega un número de teléfono o celular" : mobileRegex.test(value) ? "" : "Número de teléfono o celular inválido",
-				}));
-				break;
-	
-			case "email_subject":
-				setErrors((prevErrors) => ({
-					...prevErrors,
-					emailSubject: value.trim() === "" ? "Agrega un asunto del email" : "",
-				}));
-				break;
-	
+
 			case "mensaje":
 				setErrors((prevErrors) => ({
 					...prevErrors,
-					message: value.trim() === "" ? "Agrega un mensaje" : value.length > 100 ? "El mensaje no debe superar los 100 caracteres" : "",
+					message:
+						value.trim() === ""
+							? "Agrega un mensaje"
+							: value.length > 100
+							? "El mensaje no debe superar los 100 caracteres"
+							: "",
 				}));
 				break;
-	
+
 			default:
 				break;
 		}
 	};
 
-  // Habilitar el botón si todos los campos están completos y sin errores de validación
-  React.useEffect(() => {
-    const hasErrors = Object.values(errors).some((error) => error !== "");
-    setButtonDisabled(hasErrors);
-  }, [errors]);
+	// Habilitar el botón si todos los campos están completos y sin errores de validación
+	React.useEffect(() => {
+		const hasErrors = Object.values(errors).some((error) => error !== "");
+		setButtonDisabled(hasErrors);
+	}, [errors]);
 
-  return (
-    <section className="contact" id="contact">
-      <h2 >
-      Contacto
-      </h2>
+	return (
+		<section className="contact" id="contact">
+      <h2>Contacto</h2>
+      <p>Contactate con nosotros! Estaremos encantados de responderte</p>
+      {/* <div className="lineal">
+        <img src={location2} alt="location" />
+        <p> Calle 31 entre 2 y 4 Barrio Obrero</p>
+      </div>
+      <div className="lineal">
+        <img src={phone} alt="phone" />
+        <p> 3644 270614 </p>
+      </div>
+      <div className="lineal">
+        <img src={gmail} alt="gmail" />
+        <p> dether2011@gmail.com</p>
+      </div> */}
+			<div className="contact-container">
+				<div className="form-container">
+					<h2>Enviame un mensaje</h2>
+					<form
+						ref={form}
+						action="#"
+						onSubmit={handleSubmit}
+						className="contact-form"
+					>
+						
+							<input
+								type="text"
+								placeholder="Nombre completo"
+								name="from_name"
+								id="fullName"
+								onChange={handleChange}
+							/>
+							{errors.fullName && (
+								<span className="error-message">{errors.fullName}</span>
+							)}
+						
 
-        <form ref={form} action="#" onSubmit={handleSubmit}>
-          
-          <div className="input-box">
-            <div className="input-container">
-              <input
-                type="text"
-                placeholder="Nombre completo"
-                name="from_name"
-                id="fullName"
+						
+							<input
+								type="email"
+								placeholder="Dirección de email"
+								name="user_email"
+								id="email"
+								onChange={handleChange}
+							/>
 
-                onChange={handleChange}
-              />
-              {errors.fullName && <span className="error-message">{errors.fullName}</span>}
+							{errors.email && (
+								<span className="error-message">{errors.email}</span>
+							)}
+						
 
-            </div>
-            <div className="input-container">
-              <input
-                type="email"
-                placeholder="Dirección de email"
-                name="user_email"
-                id="email"
+						
+							<textarea
+								name="mensaje"
+								id="message"
+								cols={30}
+								rows={10}
+								placeholder="Tu mensaje"
+								onChange={handleChange}
+							/>
+							{errors.message && (
+								<span className="error-message">{errors.message}</span>
+							)}
+						
 
-                onChange={handleChange}
-              />
-
-              {errors.email && <span className="error-message">{errors.email}</span>}
-            </div>
-          </div>
-
-          <div className="input-box">
-            <div className="input-container">
-              <input
-                type="text"
-                placeholder="Número de teléfono móvil"
-                name="mobile_number"
-                id="mobileNumber"
-
-                onChange={handleChange}
-              />
-
-              {errors.mobileNumber && <span className="error-message">{errors.mobileNumber}</span>}
-            </div>
-            <div className="input-container">
-              <input
-                type="text"
-                placeholder="Asunto del email"
-                name="email_subject"
-                id="emailSubject"
-
-                onChange={handleChange}
-              />
-              {errors.emailSubject && <span className="error-message">{errors.emailSubject}</span>}
-            </div>
-          </div>
-
-            <textarea
-              name="mensaje"
-              id="message"
-              cols={30}
-              rows={10}
-              placeholder="Tu mensaje"
-
-              onChange={handleChange}
-            />
-            {errors.message && <span className="error-message-textarea">{errors.message}</span>}
-          
 						<button
-            type="submit"
-            
-            className={`btn ${isButtonDisabled ? "btn-disabled" : "active"}`}
-            disabled={isButtonDisabled}
-          >
-            Enviar email
-          </button>
-        </form>
+							type="submit"
+							className={`btn ${isButtonDisabled ? "btn-disabled" : "active"}`}
+							disabled={isButtonDisabled}
+						>
+							Enviar email
+						</button>
+					</form>
+				</div>
 
-    </section>
-  );
+				<div className="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d222.613298019723!2d-60.4237768363339!3d-26.78223756044324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94412d8d878ed4fd%3A0xc69e345eb17ead57!2sAlegon!5e0!3m2!1ses-419!2sar!4v1692121142434!5m2!1ses-419!2sar"
+						style={{ border: 0 }}
+						loading="lazy"
+						referrerPolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Contact;

@@ -6,7 +6,7 @@
       "name": "Departamento 1",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
-      "description": "Incluye Mesada, baño, patio y lavado en el patio" ,
+      "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio"  ,
       "dimensions": "15x15 mtrs",
       "img": "../../public/SM/SM5.jpg"
     },
@@ -16,7 +16,7 @@
       "name": "Departamento 2",
       "available": true,
       "services":["Luz", "Cable", "Agua"],
-      "description": "Incluye Mesada, baño, patio y lavado en el patio",
+      "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
       "img": "../../public/SM/SM2.jpg"
     },
@@ -26,7 +26,7 @@
       "name": "Departamento 3",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
-      "description": "Incluye mesada, baño, patio, lavado, agua, luz",
+      "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "35x35 mtrs",
       "img": "../../public/SM/SM3.jpg"
     },
@@ -36,7 +36,7 @@
       "name": "Departamento 4",
       "available": false,
       "services":["Luz", "Cable", "Agua"],
-      "description": "Incluye mesada, baño, patio, lavado, agua, luz",
+      "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "35x35 mtrs",
       "img": "../../public/SM/SM4.jpg"
     }
