@@ -8,7 +8,7 @@ import asd2 from "../../../public/slider/asd2.webp";
 import asd3 from "../../../public/slider/asd3.jpg";
 import asd4 from "../../../public/slider/asd4.webp";
 import asd5 from "../../../public/slider/asd5.jpg";
-
+import logo from "../../../public/logo/LOGO.png"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -30,8 +30,8 @@ const Slider: React.FC = () => {
 			>
 				<div className="slider-content">
 					<div className="slider-content-inner">
-						<h1>Departamentos Vargas</h1>
-						<p>Departamentos Disponibles: Si/No</p>
+						<img src={logo} alt="logo" />
+						{/* <p>Departamentos Disponibles: Si/No</p> */}
 					</div>
 				</div>
 				<SwiperSlide>

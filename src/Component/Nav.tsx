@@ -1,6 +1,8 @@
 // src/components/Navbar/Navbar.tsx
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../public/logo/LOGO.png";
+import keys from "../../public/logo/keys.png";
 
 const Nav: React.FC = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,34 +17,31 @@ const Nav: React.FC = () => {
 
 	return (
 		<div>
-		<nav className={`navbar ${isNavOpen ? "open" : ""}`}>
-			{/* <div className="logo" >
-				Logo
-			</div> */}
-			<div className={`nav-links ${isNavOpen ? "open" : ""}`}>
-				<NavLink to="/departaments" className="nav-link" onClick={closeNav}>
-					Departamentos
-				</NavLink>
-				<NavLink to="/services" className="nav-link" onClick={closeNav}>
-					Servicios
-				</NavLink>
-				<NavLink to="/" className="nav-link" onClick={closeNav}>
-					Inicio
-				</NavLink>
-				<NavLink to="/contact" className="nav-link" onClick={closeNav}>
-					Contacto
-				</NavLink>
-				<NavLink to="/locations" className="nav-link" onClick={closeNav}>
-					Ubicaciones
-				</NavLink>
-			</div>
+			<nav className={`navbar ${isNavOpen ? "open" : ""}`}>
+				<div className={`nav-links ${isNavOpen ? "open" : ""}`}>
+					<NavLink to="/" className="nav-link" onClick={closeNav}>
+						Inicio
+					</NavLink>
+					<NavLink to="/departaments" className="nav-link" onClick={closeNav}>
+						Departamentos
+					</NavLink>
+					<div className="logo">
+						<img src={keys} alt="logo" />
+					</div>
+					<NavLink to="/services" className="nav-link" onClick={closeNav}>
+						Servicios
+					</NavLink>
+					<NavLink to="/contact" className="nav-link" onClick={closeNav}>
+						Contacto
+					</NavLink>
+				</div>
 
-			<div className="menu-icon" onClick={toggleNav}>
-				<div className={`bar ${isNavOpen ? "open" : ""}`}></div>
-				<div className={`bar ${isNavOpen ? "open" : ""}`}></div>
-				<div className={`bar ${isNavOpen ? "open" : ""}`}></div>
-			</div>
-		</nav>
+				<div className="menu-icon" onClick={toggleNav}>
+					<div className={`bar ${isNavOpen ? "open" : ""}`}></div>
+					<div className={`bar ${isNavOpen ? "open" : ""}`}></div>
+					<div className={`bar ${isNavOpen ? "open" : ""}`}></div>
+				</div>
+			</nav>
 		</div>
 	);
 };

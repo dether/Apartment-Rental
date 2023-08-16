@@ -1,14 +1,51 @@
-const Services = () => {
-  return (
-    <section className="services" id="services">
-      <h2>Services</h2>
-      <p> aca van los servicios como: </p>
-      <p>Luz</p>
-      <p>Cable</p>
-      <p>Agua</p>
-      <p>falopa</p>
-    </section>
-  )
-}
+import React from "react";
+import electricity from "../../public/services/service-electricity.jpg";
+import cable from "../../public/services/service-cable.jpg";
+import water from "../../public/services/service-water.jpg";
+
+const Services: React.FC = () => {
+	return (
+		<section className="services" id="services">
+			<h2>Servicios</h2>
+			<p>
+				En los departamentos podras encontrar algunos de estos servicios
+				adheridos al monto mensual. Si le interesa algun departamento en
+				especial, revisar los servicios que brinda el departamento, los
+				servicios pueden variar dependiendo de la ubicación.
+			</p>
+			<div className="cards">
+				<div className="card">
+					<div className="card-img">
+						<img src={electricity} alt="electricidad" />
+					</div>
+					<div className="card-info">
+						<h2>Luz</h2>
+						<p>Hay Luz Hay Luz Hay LuzHay LuzHay LuzHay LuzHay Luz</p>
+					</div>
+				</div>
+
+				<div className="card">
+					<div className="card-img">
+						<img src={cable} alt="cable" />
+					</div>
+					<div className="card-info">
+						<h2>Cable TV</h2>
+						<p>Hay Luz Hay Luz Hay LuzHay LuzHay LuzHay LuzHay Luz</p>
+					</div>
+				</div>
+
+				<div className="card">
+					<div className="card-img">
+						<img src={water} alt="Agua" />
+					</div>
+					<div className="card-info">
+						<h2>Agua potable</h2>
+						<p>Hay Luz Hay Luz Hay LuzHay LuzHay LuzHay LuzHay Luz</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+};
 
 export default Services;
