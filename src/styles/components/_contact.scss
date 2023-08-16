@@ -38,7 +38,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1.5rem;
 		background: var(--second-bg-color);
-		box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.16);
 		border-radius: 0.5rem;
 		overflow: hidden;
 

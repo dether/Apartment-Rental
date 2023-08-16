@@ -1,23 +1,156 @@
-/* Estilos para el carrusel de servicios */
-.services-carousel {
-  .service-slide {
+.footer-section1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5rem;
+	background-color: var(--bg-color);
+
+	.footer-location-section {
+		display: flex;
+		margin-bottom: 10px;
+		flex-direction: column;
+		align-items: flex-start;
+
+		.footer-description {
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 2rem;
+			margin-top: 2rem;
+			p {
+				text-align: center;
+			}
+		}
+		.footer-location {
+			display: flex;
+			align-items: center; /* Cambio aquí para alinear los iconos y párrafos en la misma línea */
+			margin-bottom: 2rem;
+			a {
+				text-decoration: none;
+				color: var(--text-color);
+				display: flex;
+				align-items: center; /* Cambio aquí para alinear los iconos y párrafos en la misma línea */
+
+				p {
+					font-size: 1.6rem;
+					margin: 0;
+				}
+			}
+			a:hover {
+				color: var(--main-color);
+			}
+			.footer-location-icon {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.footer-section3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5rem;
+	background-color: var(--bg-color);
+
+	.footer-contact-section {
+		display: flex;
+		margin-bottom: 10px;
+		flex-direction: column;
+		align-items: flex-start;
+
+		.footer-description {
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 2rem;
+			margin-top: 2rem;
+			p {
+				text-align: center;
+			}
+		}
+		.footer-contact {
+			display: flex;
+			align-items: center; /* Cambio aquí para alinear los iconos y párrafos en la misma línea */
+			margin-bottom: 2rem;
+			a {
+				text-decoration: none;
+				color: var(--text-color);
+				display: flex;
+				align-items: center; /* Cambio aquí para alinear los iconos y párrafos en la misma línea */
+
+				p {
+					font-size: 1.6rem;
+					margin: 0;
+				}
+			}
+			a:hover {
+				color: var(--main-color);
+			}
+			.footer-contact-icon {
+				margin-right: 10px;
+			}
+			.copied-message {
+				font-size: 1.6rem;
+				color: var(--main-color);
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+
+/*
+.footer-section1,
+  .footer-section3 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 1rem;
+    align-items: center;
+		margin: 0 5rem;
+		background-color: var(--bg-color);
 
-    img {
-      width: 30px; /* Ajusta el ancho del icono según tus necesidades */
-      height: 30px; /* Ajusta la altura del icono según tus necesidades */
-      margin-bottom: 0.5rem; /* Espacio entre el icono y el título */
-    }
+    .footer-location-section,
+    .footer-contact-section {
+      display: flex;
+      margin-bottom: 10px;
+      flex-direction: column;
+      align-items: flex-start;
 
-    p {
-      font-size: 1rem;
-      color: var(--text-color);
-      margin: 0;
+			.footer-description{
+				text-align: center;
+				font-size: 2rem;
+				margin-bottom: 2rem;
+				margin-top: 2rem;
+				p{
+					text-align: center
+				}
+			}
+      .footer-location,
+      .footer-contact {
+        display: flex;
+        align-items: center; 
+				margin-bottom: 2rem;
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+          display: flex;
+          align-items: center; 
+
+          p {
+            font-size: 1.6rem;
+            margin: 0;
+          }
+        }
+				a:hover{
+					color:var(--main-color)
+				}
+        .footer-location-icon,
+        .footer-contact-icon {
+          margin-right: 10px;
+        }
+				.copied-message{
+					font-size: 1.6rem;
+					color: var(--main-color);
+					margin-left: 1rem;
+				}
+      }
     }
   }
-}
+*/
