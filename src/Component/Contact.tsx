@@ -1,9 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import location2 from "../../public/icon/location2.svg"
-import phone from "../../public/icon/phone.svg"
-import gmail from "../../public/icon/gmail.svg"
 
 const id = import.meta.env.VITE_ID;
 const service = import.meta.env.VITE_SERVICE;

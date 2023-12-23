@@ -2,7 +2,6 @@ import "./styles/index.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Nav from "./Component/Nav";
-import Departments from "./Component/Departaments/Departments";
 import DepartmentsST from "./Component/Departaments/DepartmentsST";
 import DepartmentsSM from "./Component/Departaments/DepartmentsSM";
 import Contact from "./Component/Contact";

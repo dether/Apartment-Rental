@@ -15,6 +15,7 @@
 	}
 	p {
 		font-size: 1.6rem;
+		padding: 3rem;
     color: var(--text-color);
     margin-bottom: 2rem; /* Ajusta el margen inferior según tus necesidades */
     text-align: center;
@@ -124,7 +125,6 @@
 	@media (max-width: 964px) {
 		.contact-container {
 			margin: 0 auto;
-			margin-top: 3rem;
 			width: 90%;
 		}
 	}

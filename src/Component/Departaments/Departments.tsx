@@ -68,7 +68,8 @@ const Departaments: React.FC = () => {
 									))}
 								</div>
 								<h1>Ubicación:</h1>
-								<p><img src={location}></img><a href={department.redirection}>{department.location}</a></p>
+								<p><img src={location}></img><a href={department.mapEmbedUrl} target="_blank"
+										rel="noopener noreferrer">{department.location}</a></p>
 								<button className="btn">
 									{" "}
 									<a href={department.redirection}>

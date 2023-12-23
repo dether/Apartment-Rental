@@ -20,7 +20,6 @@ const Services: React.FC = () => {
 					</div>
 					<div className="card-info">
 						<h2>Luz</h2>
-						<p>Hay Luz Hay Luz Hay LuzHay LuzHay LuzHay LuzHay Luz</p>
 					</div>
 				</div>
 
@@ -30,7 +29,6 @@ const Services: React.FC = () => {
 					</div>
 					<div className="card-info">
 						<h2>Cable TV</h2>
-						<p>Hay Luz Hay Luz Hay LuzHay LuzHay LuzHay LuzHay Luz</p>
 					</div>
 				</div>
 
@@ -40,7 +38,6 @@ const Services: React.FC = () => {
 					</div>
 					<div className="card-info">
 						<h2>Agua potable</h2>
-						<p>Hay Luz Hay Luz Hay LuzHay LuzHay LuzHay LuzHay Luz</p>
 					</div>
 				</div>
 			</div>

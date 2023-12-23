@@ -1,7 +1,6 @@
 // src/components/Navbar/Navbar.tsx
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../public/logo/LOGO.png";
 import keys from "../../public/logo/keys.png";
 
 const Nav: React.FC = () => {

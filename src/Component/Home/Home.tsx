@@ -13,12 +13,7 @@ const Home: React.FC = () => {
 					<div className="block1">
 						<h3>Bienvenidos a</h3>
 						<h3>Departamentos Vargas</h3>
-						<p>
-							Se encuentra en la zona de Presidencia Roque Sáenz Peña. Ofrecemos
-							habitaciones con aire acondicionado, baño privado y conexión de
-							wifi gratis. El alojamiento dispone de spa, bañera de hidromasaje
-							y pileta al aire libre. Todas las habitaciones del hotel están
-							equipadas con TV de pantalla plana con canales por cable.
+						<p>¡Bienvenido/a al lugar perfecto para encontrar tu próximo hogar! Nuestros departamentos en alquiler ofrecen comodidad y conveniencia a precios excepcionales. Disfruta de la libertad de vivir en un espacio monoambiente o biambiente diseñados para satisfacer tus necesidades básicas y estilo de vida.
 						</p>
 					</div>
 
