@@ -1,7 +1,7 @@
 import React from "react";
-import electricity from "../../../public/services/service-electricity.jpg";
-import cable from "../../../public/services/service-cable.jpg";
-import water from "../../../public/services/service-water.jpg";
+import electricity from "../../utils/services/service-electricity.jpg";
+import cable from "../../utils/services/service-cable.jpg";
+import water from "../../utils/services/service-water.jpg";
 
 const Services: React.FC = () => {
 	return (

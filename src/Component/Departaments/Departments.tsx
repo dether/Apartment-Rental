@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import departmentsData from "../../utils/departments.json";
-import location from "../../../public/icon/location.svg"
+import location from "../../utils/icon/location.svg"
 
 interface GeneralDepartments {
 	types: string[];

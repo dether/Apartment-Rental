@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
-import deptos from "../../../public/deptos.png";
+import deptos from "../../utils/deptos.png";
 import AvailableDepartments from "./AvailableDepartments";
 
 const Home: React.FC = () => {

@@ -9,7 +9,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "../../public/ST/ST8.jpg"
+      "img": "./ST/ST8.jpg"
     },
     {
       "type":"Monoambiente",
@@ -19,7 +19,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "../../public/ST/ST2.jpg"
+      "img": "./ST/ST2.jpg"
     },
     {
       "type":"Monoambiente",
@@ -29,7 +29,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "../../public/ST/ST3.jpg"
+      "img": "./ST/ST3.jpg"
     },
     {
       "type":"Monoambiente",
@@ -39,7 +39,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "../../public/ST/ST4.jpg"
+      "img": "./ST/ST4.jpg"
     },
     {
       "type":"Monoambiente",
@@ -49,7 +49,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "../../public/ST/ST5.jpg"
+      "img": "./ST/ST5.jpg"
     },
     {
       "type":"Monoambiente",
@@ -59,7 +59,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "../../public/ST/ST6.jpg"
+      "img": "./ST/ST6.jpg"
     },
     { 
       "type":"Para dos personas",
@@ -69,7 +69,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye mesada, baño, patio, lavado, agua, luz",
       "dimensions": "35x35 mtrs",
-      "img": "../../public/ST/ST7.jpg"
+      "img": "./ST/ST7.jpg"
     },
     { 
       "type":"Tienda",
@@ -79,7 +79,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Local comercial incluye un baño, vidriera y dos entradas.",
       "dimensions": "35x35 mtrs",
-      "img": "../../public/ST/LOCAL.jpg"
+      "img": "./ST/LOCAL.jpg"
     }
   ]
 }

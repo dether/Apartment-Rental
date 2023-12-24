@@ -2,13 +2,13 @@ import React from "react";
 import SwiperCore from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import asd from "../../../public/slider/asd.jpg";
-import asd1 from "../../../public/slider/asd1.jpg";
-import asd2 from "../../../public/slider/asd2.jpg";
-import asd3 from "../../../public/slider/asd3.jpg";
-import asd4 from "../../../public/slider/asd4.jpg";
-import asd5 from "../../../public/slider/asd5.jpg";
-import logo from "../../../public/logo/LOGO.png"
+import asd from "../../utils/slider/asd.jpg";
+import asd1 from "../../utils/slider/asd1.jpg";
+import asd2 from "../../utils/slider/asd2.jpg";
+import asd3 from "../../utils/slider/asd3.jpg";
+import asd4 from "../../utils/slider/asd4.jpg";
+import asd5 from "../../utils/slider/asd5.jpg";
+import logo from "../../utils/logo/LOGO.png"
 
 import "swiper/css";
 import "swiper/css/pagination";

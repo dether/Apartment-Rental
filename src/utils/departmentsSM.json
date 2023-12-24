@@ -8,7 +8,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio"  ,
       "dimensions": "15x15 mtrs",
-      "img": "../../public/SM/SM5.jpg"
+      "img": "./SM/SM5.jpg"
     },
     {
       "type":"Monoambiente",
@@ -18,7 +18,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "15x15 mtrs",
-      "img": "../../public/SM/SM2.jpg"
+      "img": "./SM/SM2.jpg"
     },
     { 
       "type":"Para dos personas",
@@ -28,7 +28,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "35x35 mtrs",
-      "img": "../../public/SM/SM3.jpg"
+      "img": "./SM/SM3.jpg"
     },
     { 
       "type":"Para dos personas",
@@ -38,7 +38,7 @@
       "services":["Luz", "Cable", "Agua"],
       "description": "Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
       "dimensions": "35x35 mtrs",
-      "img": "../../public/SM/SM4.jpg"
+      "img": "./SM/SM4.jpg"
     }
   ]
 }

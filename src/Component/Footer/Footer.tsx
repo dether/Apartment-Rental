@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import gmail from "../../../public/icon/gmail.svg";
-import cel from "../../../public/icon/cel.svg";
-import location from "../../../public/icon/location.svg";
-import logo from "../../../public/logo/LOGO.png";
+import gmail from "../../utils/icon/gmail.svg";
+import cel from "../../utils/icon/cel.svg";
+import location from "../../utils/icon/location.svg";
+import logo from "../../utils/logo/LOGO.png";
 
 const Footer: React.FC = () => {
 	const [isCopiedEmail, setIsCopiedEmail] = useState(false);

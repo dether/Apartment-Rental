@@ -5,14 +5,14 @@
 			"location": "Esquina 29 y 000 del Barrio Santa Teresita",
 			"name": "Departamentos Santa Teresita",
 			"servicesIcon": [
-				"../../public/icon/Light bulb.svg",
-				"../../public/icon/cable tv.svg",
-				"../../public/icon/Tap Water Drink.svg"
+				"./icon/Light bulb.svg",
+				"./icon/cable tv.svg",
+				"./icon/Tap Water Drink.svg"
 			],
 			"services": ["Luz", "Cable", "Agua"],
 			"description": "En Departamentos Santa Teresita, te ofrecemos la elección entre acogedores monoambientes y espaciosos departamentos para dos personas. Cada unidad ha sido cuidadosamente diseñada para brindar comodidad y funcionalidad, creando un ambiente acogedor que te hará sentir como en casa desde el momento en que entres por la puerta. Tambien disponemos de un local ubicado estrategicamente en la esquina ubicado en la calle 29 y 000 del Barrio Santa Teresita",
 			"dimensions": ["15x15 mtrs", "25x25 mtrs"],
-			"img": "../../public/ST/ST1.jpg",
+			"img": "./ST/ST1.jpg",
 			"mapEmbedUrl": "https://maps.app.goo.gl/nKwgP9ujNe894qAB7",
 			"redirection": "/Apartment-Rental/departments/santa-teresita"
 		}
@@ -23,8 +23,8 @@
 			"location": "Calle 39 entre 14 y 16 del Barrio Santa Monica",
 			"name": "Departamentos Santa Monica",
 			"servicesIcon": [
-				"../../public/icon/Light bulb.svg",
-				"../../public/icon/Tap Water Drink.svg"
+				"./icon/Light bulb.svg",
+				"./icon/Tap Water Drink.svg"
 			],
 			"services": ["Luz", "Agua"],
 			"description": "En Departamentos Santa Mónica, te ofrecemos la elección entre acogedores monoambientes y espaciosos departamentos para dos personas. Cada unidad ha sido cuidadosamente diseñada para brindar comodidad y funcionalidad, creando un ambiente acogedor que te hará sentir como en casa desde el momento en que entres por la puerta.",
