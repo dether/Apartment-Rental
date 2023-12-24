@@ -1,14 +1,13 @@
 import React from "react";
-import departmentsSM from "../../utils/departmentsSM.json";
-import departmentsST from "../../utils/departmentsST.json";
+import apartmentData from "../../utils/apartmentData";
 import { Link } from "react-router-dom";
 
 const AvailableDepartments: React.FC = () => {
-	const availableCountST = departmentsST.departmentsSantaTeresita.filter(
+	const availableCountST = apartmentData.departmentsSantaTeresita.filter(
 		(department) => department.available
 	).length;
 
-	const availableCountSM = departmentsSM.departmentsSantaMonica.filter(
+	const availableCountSM = apartmentData.departmentsSantaMonica.filter(
 		(department) => department.available
 	).length;
 
@@ -25,12 +24,12 @@ const AvailableDepartments: React.FC = () => {
 				<p className="card-title-available">{title}</p>
 				{isAnyAvailable ? (
 					<>
-						<Link to="/departments/santa-teresita">
+						<Link to="/Apartment-Rental/departments/santa-teresita">
 							<p className="small-desc-availableST">
 								{`Departamentos en Santa Teresita: ${availableCountST}/10`}
 							</p>
 						</Link>
-						<Link to="/departments/santa-monica">
+						<Link to="/Apartment-Rental/departments/santa-monica">
 							<p className="small-desc-availableSM">
 								{`Departamentos en Santa Monica: ${availableCountSM}/10`}
 							</p>
