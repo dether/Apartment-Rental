@@ -16,7 +16,7 @@ function App() {
 			<Nav />
 			<div className="content">
 				<Routes>
-					<Route path="/" element={<Home />} />
+					<Route path="/Apartment-Rental" element={<Home />} />
 					<Route path="/Apartment-Rental/departments" element={<Departaments />} />
 					<Route path="/Apartment-Rental/departments/santa-teresita" element={<DepartmentsST />} />
 					<Route path="/Apartment-Rental/departments/santa-monica" element={<DepartmentsSM />} />
