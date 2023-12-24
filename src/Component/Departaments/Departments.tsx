@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import location from "../../utils/icon/location.svg"
 import apartmentData from "../../utils/apartmentData";
+import { Link } from "react-router-dom";
 
 interface GeneralDepartments {
 	types: string[];
@@ -72,10 +73,15 @@ const Departaments: React.FC = () => {
 								<p><img src={location}></img><a href={department.mapEmbedUrl} target="_blank"
 										rel="noopener noreferrer">{department.location}</a></p>
 								<button className="btn">
-									{" "}
+								<Link to={department.redirection}>
+							<p>
+							Ver los departamentos
+							</p>
+						</Link>
+									{/* {" "}
 									<a href={department.redirection}>
 										Ver los departamentos
-									</a>{" "}
+									</a>{" "} */}
 								</button>
 							</div>
 						</div>
