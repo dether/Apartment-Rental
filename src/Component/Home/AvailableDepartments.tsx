@@ -24,12 +24,12 @@ const AvailableDepartments: React.FC = () => {
 				<p className="card-title-available">{title}</p>
 				{isAnyAvailable ? (
 					<>
-						<Link to="/Apartment-Rental/departments/santa-teresita">
+						<Link to="/departments/santa-teresita">
 							<p className="small-desc-availableST">
 								{`Departamentos en Santa Teresita: ${availableCountST}/10`}
 							</p>
 						</Link>
-						<Link to="/Apartment-Rental/departments/santa-monica">
+						<Link to="/departments/santa-monica">
 							<p className="small-desc-availableSM">
 								{`Departamentos en Santa Monica: ${availableCountSM}/10`}
 							</p>
