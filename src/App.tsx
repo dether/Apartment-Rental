@@ -17,11 +17,8 @@ function App() {
 			<div className="content">
 				<Routes>
 					<Route path="/Apartment-Rental" element={<Home />} />
-					<Route path="/Apartment-Rental/departaments" element={<Departaments />} />
-					<Route
-						path="/Apartment-Rental/departments/santa-teresita"
-						element={<DepartmentsST />}
-					/>
+					<Route path="/Apartment-Rental/departments" element={<Departaments />} />
+					<Route path="/Apartment-Rental/departments/santa-teresita" element={<DepartmentsST />} />
 					<Route path="/Apartment-Rental/departments/santa-monica" element={<DepartmentsSM />} />
 					<Route path="/Apartment-Rental/contact" element={<Contact />} />
 					<Route path="/Apartment-Rental/locations" element={<Location />} />
