@@ -89,7 +89,7 @@ const apartmentData: ApartmentData = {
 			dimensions: ["15x15 mtrs", "25x25 mtrs"],
 			img: ST,
 			mapEmbedUrl: "https://maps.app.goo.gl/nKwgP9ujNe894qAB7",
-			redirection: "/departments/santa-teresita",
+			redirection: "/Apartment-Rental/departments/santa-teresita",
 		},
 	],
 	departmentSM: [
@@ -107,7 +107,7 @@ const apartmentData: ApartmentData = {
 			dimensions: ["15x15 mtrs", "25x25 mtrs"],
 			img: SM,
 			mapEmbedUrl: "https://maps.app.goo.gl/1ApEVKo6ZnagDPCy8",
-			redirection: "/departments/santa-monica",
+			redirection: "/Apartment-Rental/departments/santa-monica",
 		},
 	],
 	departmentsSantaMonica: [
