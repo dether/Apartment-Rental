@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import departmentsData from "../../utils/departments.json";
 import location from "../../utils/icon/location.svg"
+import apartmentData from "../../utils/apartmentData";
 
 interface GeneralDepartments {
 	types: string[];
@@ -20,10 +20,10 @@ const Departaments: React.FC = () => {
 
 	const filteredDepartments =
 		selectedFilter === "Location"
-			? departmentsData.departmentST.concat(departmentsData.departmentSM)
+			? apartmentData.departmentST.concat(apartmentData.departmentSM)
 			: selectedFilter === "Santa Teresita"
-			? departmentsData.departmentST
-			: departmentsData.departmentSM;
+			? apartmentData.departmentST
+			: apartmentData.departmentSM;
 
 	return (
 		<section className="departaments" id="departaments">

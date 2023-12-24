@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import departments from "../../utils/departmentsSM.json";
+import apartmentData from "../../utils/apartmentData";
 import light from "../../utils/icon/Light bulb.svg";
 import water from "../../utils/icon/Tap Water Drink.svg";
 import cable from "../../utils/icon/cable tv.svg";
@@ -23,7 +23,7 @@ const DepartmentsSM: React.FC = () => {
 		"todos" | "disponible" | "noDisponible"
 	>("todos");
 
-	const filteredDepartments = departments.departmentsSantaMonica.filter(
+	const filteredDepartments = apartmentData.departmentsSantaMonica.filter(
 		(department: Department) => {
 			const matchesType =
 				filterType === "todos" || department.type === filterType;
