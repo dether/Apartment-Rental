@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
 					<NavLink to="/Apartment-Rental" className="nav-link" onClick={closeNav}>
 						Inicio
 					</NavLink>
-					<NavLink to="/Apartment-Rental/departaments" className="nav-link" onClick={closeNav}>
+					<NavLink to="/Apartment-Rental/departments" className="nav-link" onClick={closeNav}>
 						Departamentos
 					</NavLink>
 					<div className="logo">
