@@ -1,7 +1,7 @@
 // src/components/Navbar/Navbar.tsx
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import keys from "../../public/logo/keys.png";
+import keys from "../../../public/logo/keys.png";
 
 const Nav: React.FC = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);

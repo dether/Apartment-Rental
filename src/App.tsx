@@ -1,13 +1,13 @@
 import "./styles/index.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Component/Home/Home";
-import Nav from "./Component/Nav";
+import Nav from "./Component/Nav/Nav";
 import DepartmentsST from "./Component/Departaments/DepartmentsST";
 import DepartmentsSM from "./Component/Departaments/DepartmentsSM";
-import Contact from "./Component/Contact";
+import Contact from "./Component/Contact/Contact";
 import Location from "./Component/Location";
-import Footer from "./Component/Footer";
-import Services from "./Component/Services";
+import Footer from "./Component/Footer/Footer";
+import Services from "./Component/Services/Services";
 import Departaments from "./Component/Departaments/Departments";
 
 function App() {

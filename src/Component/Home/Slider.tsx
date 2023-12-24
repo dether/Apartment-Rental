@@ -4,9 +4,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import asd from "../../../public/slider/asd.jpg";
 import asd1 from "../../../public/slider/asd1.jpg";
-import asd2 from "../../../public/slider/asd2.webp";
+import asd2 from "../../../public/slider/asd2.jpg";
 import asd3 from "../../../public/slider/asd3.jpg";
-import asd4 from "../../../public/slider/asd4.webp";
+import asd4 from "../../../public/slider/asd4.jpg";
 import asd5 from "../../../public/slider/asd5.jpg";
 import logo from "../../../public/logo/LOGO.png"
 

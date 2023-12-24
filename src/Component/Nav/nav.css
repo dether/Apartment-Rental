@@ -1,5 +1,4 @@
-
-.navbar {
+/* .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -17,20 +16,18 @@
 
 .nav-links {
 	display: flex;
-	flex-direction: row; /* Cambiado de row a column */
+	flex-direction: row;
 	background-color: #333;
-	align-items: center; /* Centrar verticalmente */
-	gap: 2rem; /* Espaciado entre redirecciones */
+	align-items: center; 
+	gap: 2rem; 
 	position: relative;
 	top: 0;
 	left: auto;
-    width: auto;
-    height: auto;
+	width: auto;
+	height: auto;
 	padding: 0;
 	transform: none;
 }
-
-
 
 .nav-links.open {
 	font-size: 3rem;
@@ -38,10 +35,8 @@
 	width: 100%;
 	height: 100vh;
 	top: 0;
-	transition-delay: 0.2s; /* Resetea la demora cuando se abre */
+	transition-delay: 0.2s; 
 }
-
-
 
 .nav-link {
 	text-decoration: none;
@@ -54,10 +49,8 @@
 }
 
 .nav-link.active {
-	color: green; /* Cambia "verde" por el color que desees */
+	color: green; 
 }
-
-
 
 .menu-icon {
 	display: none;
@@ -69,9 +62,9 @@
 	.nav-links {
 		flex-direction: column;
 		background-color: #333;
-		position: fixed; /* Cambiado de absolute a fixed */
+		position: fixed; 
 		top: 0;
-		left: -100%; /* Cambiado de transform a left */
+		left: -100%; 
 		width: 100%;
 		height: 100%;
 		padding: 1rem;
@@ -115,3 +108,4 @@
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
 }
+ */
