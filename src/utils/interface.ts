@@ -1,4 +1,4 @@
-import asd from "../assets/icon/Light bulb.svg"
+
 export interface Department {
 	type: string;
 	name: string;
