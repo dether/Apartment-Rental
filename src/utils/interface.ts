@@ -1,4 +1,3 @@
-
 export interface Department {
 	type: string;
 	name: string;
