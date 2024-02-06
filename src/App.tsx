@@ -1,4 +1,3 @@
-
 import { Routes, Route } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Nav from "./Component/Nav/Nav";
@@ -17,9 +16,18 @@ function App() {
 			<div className="content">
 				<Routes>
 					<Route path="/Apartment-Rental" element={<Home />} />
-					<Route path="/Apartment-Rental/departments" element={<Departaments />} />
-					<Route path="/Apartment-Rental/departments/santa-teresita" element={<DepartmentsST />} />
-					<Route path="/Apartment-Rental/departments/santa-monica" element={<DepartmentsSM />} />
+					<Route
+						path="/Apartment-Rental/departments"
+						element={<Departaments />}
+					/>
+					<Route
+						path="/Apartment-Rental/departments/santa-teresita"
+						element={<DepartmentsST />}
+					/>
+					<Route
+						path="/Apartment-Rental/departments/santa-monica"
+						element={<DepartmentsSM />}
+					/>
 					<Route path="/Apartment-Rental/contact" element={<Contact />} />
 					<Route path="/Apartment-Rental/locations" element={<Location />} />
 					<Route path="/Apartment-Rental/services" element={<Services />} />

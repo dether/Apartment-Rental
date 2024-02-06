@@ -2,7 +2,6 @@
 	"name": "proyecto",
 	"private": true,
 	"version": "0.0.0",
-	"homepage": "/Apartments-Rental",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
