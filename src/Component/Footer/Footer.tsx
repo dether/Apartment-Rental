@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import gmail from "../../utils/icon/gmail.svg";
 import cel from "../../utils/icon/whatsapp.svg";
@@ -6,44 +6,6 @@ import location from "../../utils/icon/location.svg";
 import logo from "../../utils/logo/LOGO.png";
 
 const Footer: React.FC = () => {
-	/* const [isCopiedEmail, setIsCopiedEmail] = useState(false);
-	const [isCopiedNumber, setIsCopiedNumber] = useState(false);
-
-	const handleCopyEmail = () => {
-		const email = "dether2011@gmail.com";
-		navigator.clipboard
-			.writeText(email)
-			.then(() => {
-				setIsCopiedEmail(true);
-				setTimeout(() => {
-					setIsCopiedEmail(false);
-				}, 2000);
-			})
-			.catch((error) => {
-				console.error(
-					"Error al copiar la dirección de correo electrónico:",
-					error
-				);
-			});
-	};
-	const handleCopyNumber = () => {
-		const number = "+543644130578";
-		navigator.clipboard
-			.writeText(number)
-			.then(() => {
-				setIsCopiedNumber(true);
-				setTimeout(() => {
-					setIsCopiedNumber(false);
-				}, 2000);
-			})
-			.catch((error) => {
-				console.error(
-					"Error al copiar la dirección de correo electrónico:",
-					error
-				);
-			});
-	}; */
-
 	return (
 		<footer className="footer">
 			<div className="footer-section1">
