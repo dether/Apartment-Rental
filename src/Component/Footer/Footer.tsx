@@ -14,6 +14,7 @@ const Footer: React.FC = () => {
 					<div className="footer-description1">
 						<p>Ubicación de los Departamentos</p>
 					</div>
+
 					<div className="footer-location">
 						<a
 							href="https://goo.gl/maps/ULdSERsA7RjgTfRj8"
@@ -28,6 +29,7 @@ const Footer: React.FC = () => {
 							<p>Departamentos Santa Teresita</p>
 						</a>
 					</div>
+
 					<div className="footer-location">
 						<a
 							href="https://goo.gl/maps/1ewFs8dAcH2fUCCR8"
@@ -42,6 +44,7 @@ const Footer: React.FC = () => {
 							<p>Departamentos Santa Monica</p>
 						</a>
 					</div>
+					
 				</div>
 			</div>
 

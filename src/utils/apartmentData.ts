@@ -148,7 +148,7 @@ const apartmentData: ApartmentData = {
 			type: "Para dos personas",
 			location: "Santa Monica",
 			name: "Departamento 4",
-			available: true,
+			available: false,
 			services: ["Luz", "Cable", "Agua"],
 			description:
 				"Incluye Mesada, baño, patio y lavado en el patio",
