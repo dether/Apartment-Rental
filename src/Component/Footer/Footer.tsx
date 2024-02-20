@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 import gmail from "../../utils/icon/gmail.svg";
-import cel from "../../utils/icon/cel.svg";
+import cel from "../../utils/icon/whatsapp.svg";
 import location from "../../utils/icon/location.svg";
 import logo from "../../utils/logo/LOGO.png";
 
 const Footer: React.FC = () => {
-	const [isCopiedEmail, setIsCopiedEmail] = useState(false);
+	/* const [isCopiedEmail, setIsCopiedEmail] = useState(false);
 	const [isCopiedNumber, setIsCopiedNumber] = useState(false);
 
 	const handleCopyEmail = () => {
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
 					error
 				);
 			});
-	};
+	}; */
 
 	return (
 		<footer className="footer">
@@ -94,25 +94,26 @@ const Footer: React.FC = () => {
 			<div className="footer-section3">
 				{/* Sección de contactos */}
 				<div className="footer-contact-section">
-          
 					<div className="footer-description3">
 						<p>Contacto</p>
 					</div>
 
 					<div className="footer-contact">
-						<a onClick={handleCopyEmail}>
+
+						<a href="mailto:dether2011@gmail.com?subject=Departamentos%20Vargas&body=Hola%20marcelo%2C%20...">
 							<img className="footer-contact-icon" src={gmail} alt="gmail" />
 							<p>dether2011@gmail.com</p>
 						</a>
-						{isCopiedEmail && <span className="copied-message">Copiado</span>}
 					</div>
 
 					<div className="footer-contact">
-						<a onClick={handleCopyNumber}>
+						<a
+							aria-label="Chat on WhatsApp"
+							href="https://wa.me/+543644130578?text=Hola%20Marcelo%20me%20comunico%20por%20los%20departamentos,%20desde%20la%20pagina%20web"
+						>
 							<img className="footer-contact-icon" src={cel} alt="phone" />
 							<p>+54 3644 130578</p>
 						</a>
-						{isCopiedNumber && <span className="copied-message">Copiado</span>}
 					</div>
 
 					<div className="footer-contact">

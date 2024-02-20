@@ -37,73 +37,83 @@ const DepartmentsST: React.FC = () => {
 	);
 
 	return (
-			<div className="departmentsSt" id="departmentsSt">
+		<section className="departmentsSt" id="departmentsSt">
 
-				<div className="filterSt-container">
-					<div className="filters">
-						<label htmlFor="typeFilter">Filtrar por Tipo:</label>
-						<select
-							id="typeFilter"
-							value={filterType}
-							onChange={(event) =>
-								setFilterType(event.target.value as typeof filterType)
-							}
-						>
-							<option value="todos">Todos</option>
-							<option value="Monoambiente">Monoambiente</option>
-							<option value="Para dos personas">Para dos personas</option>
-							<option value="Tienda">Tienda</option>
-						</select>
+			<h2>Departamentos Santa Teresita</h2>
 
-						<label htmlFor="availabilityFilter">
-							Filtrar por Disponibilidad:
-						</label>
-						<select
-							id="availabilityFilter"
-							value={filterAvailability}
-							onChange={(event) =>
-								setFilterAvailability(
-									event.target.value as typeof filterAvailability
-								)
-							}
-						>
-							<option value="todos">Todos</option>
-							<option value="disponible">Disponible</option>
-							<option value="noDisponible">No disponible</option>
-						</select>
-						</div>
-						<button
-							onClick={() => {
-								setFilterType("todos");
-								setFilterAvailability("todos");
-							}}
-							className="btn"
-						>
-							Limpiar Filtros
-						</button>
-					
+			<div className="filterSt-container">
+
+				<div className="filters">
+
+					<label htmlFor="typeFilter">Filtrar por Tipo:</label>
+					<select
+						id="typeFilter"
+						value={filterType}
+						onChange={(event) =>
+							setFilterType(event.target.value as typeof filterType)
+						}
+					>
+						<option value="todos">Todos</option>
+						<option value="Monoambiente">Monoambiente</option>
+						<option value="Para dos personas">Para dos personas</option>
+						<option value="Tienda">Tienda</option>
+					</select>
+
+					<label htmlFor="availabilityFilter">
+						Filtrar por Disponibilidad:
+					</label>
+					<select
+						id="availabilityFilter"
+						value={filterAvailability}
+						onChange={(event) =>
+							setFilterAvailability(
+								event.target.value as typeof filterAvailability
+							)
+						}
+					>
+						<option value="todos">Todos</option>
+						<option value="disponible">Disponible</option>
+						<option value="noDisponible">No disponible</option>
+					</select>
 				</div>
+				<button
+					onClick={() => {
+						setFilterType("todos");
+						setFilterAvailability("todos");
+					}}
+					className="btn"
+				>
+					Limpiar Filtros
+				</button>
+			</div>
 
-				<div className="departmentSt-cards">
+			<div className="departmentSt-cards">
 				{filteredDepartments.map((department: Department, index: number) => (
 					<div key={index} className="departmentSt-card">
+
 						<div className="departmentSt-img">
 							<img src={department.img} alt={department.name} />
 						</div>
 
 						<div className="departmentSt-content">
+
 							<h2 className="heading">{department.name}</h2>
+
 							<p>{department.description}</p>
+
 							<p>
 								<strong>Tipo:</strong> {department.type}
 							</p>
+
 							<p>
 								<strong>Disponibilidad:</strong>{" "}
 								{department.available === true ? "Disponible" : "No disponible"}
 							</p>
+
 							<p>
 								<strong>Dimensiones:</strong> {department.dimensions}
 							</p>
+							
 							<ul className="servicesSt-list">
 								{department.services.map((service, i) => (
 									<li key={i}>
@@ -128,8 +138,8 @@ const DepartmentsST: React.FC = () => {
 						</div>
 					</div>
 				))}
-				</div>
-		</div>
+			</div>
+		</section>
 	);
 };
 

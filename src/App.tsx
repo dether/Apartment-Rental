@@ -15,22 +15,22 @@ function App() {
 			<Nav />
 			<div className="content">
 				<Routes>
-					<Route path="/Apartment-Rental" element={<Home />} />
+					<Route path="/" element={<Home />} />
 					<Route
-						path="/Apartment-Rental/departments"
+						path="/departments"
 						element={<Departaments />}
 					/>
 					<Route
-						path="/Apartment-Rental/departments/santa-teresita"
+						path="/departments/santa-teresita"
 						element={<DepartmentsST />}
 					/>
 					<Route
-						path="/Apartment-Rental/departments/santa-monica"
+						path="/departments/santa-monica"
 						element={<DepartmentsSM />}
 					/>
-					<Route path="/Apartment-Rental/contact" element={<Contact />} />
-					<Route path="/Apartment-Rental/locations" element={<Location />} />
-					<Route path="/Apartment-Rental/services" element={<Services />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/locations" element={<Location />} />
+					<Route path="/services" element={<Services />} />
 				</Routes>
 			</div>
 			<Footer />

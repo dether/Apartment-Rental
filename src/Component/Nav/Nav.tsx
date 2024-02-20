@@ -18,19 +18,19 @@ const Nav: React.FC = () => {
 		<div>
 			<nav className={`navbar ${isNavOpen ? "open" : ""}`}>
 				<div className={`nav-links ${isNavOpen ? "open" : ""}`}>
-					<NavLink to="/Apartment-Rental/" className="nav-link" onClick={closeNav}>
+					<NavLink to="/" className="nav-link" onClick={closeNav}>
 						Inicio
 					</NavLink>
-					<NavLink to="/Apartment-Rental/departments" className="nav-link" onClick={closeNav}>
+					<NavLink to="/departments" className="nav-link" onClick={closeNav}>
 						Departamentos
 					</NavLink>
 					<div className="logo">
 						<img src={keys} alt="logo" />
 					</div>
-					<NavLink to="/Apartment-Rental/services" className="nav-link" onClick={closeNav}>
+					<NavLink to="/services" className="nav-link" onClick={closeNav}>
 						Servicios
 					</NavLink>
-					<NavLink to="/Apartment-Rental/contact" className="nav-link" onClick={closeNav}>
+					<NavLink to="/contact" className="nav-link" onClick={closeNav}>
 						Contacto
 					</NavLink>
 				</div>

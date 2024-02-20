@@ -9,11 +9,17 @@ const Home: React.FC = () => {
 			<Slider />
 			<section className="home">
 				<div className="blocks">
-          
 					<div className="block1">
 						<h3>Bienvenidos a</h3>
 						<h3>Departamentos Vargas</h3>
-						<p>¡Bienvenido/a al lugar perfecto para encontrar tu próximo hogar! Nuestros departamentos en alquiler ofrecen comodidad y conveniencia a precios excepcionales. Disfruta de la libertad de vivir en un espacio monoambiente o biambiente diseñados para satisfacer tus necesidades básicas y estilo de vida.
+						<p>
+							¡Bienvenidos a la pagina web de Departamentos Vargas! Nuestros
+							departamentos en alquiler ofrecen comodidad y conveniencia a
+							precios excepcionales. Disfruta de la libertad de vivir en un
+							espacio monoambiente o biambiente diseñados para satisfacer tus
+							necesidades básicas y estilo de vida. Esta pagina por el momento
+							solo sirve para ver la disponibilidad de los departamentos,
+							ubicación geograficamente y nuesta información para contactarnos.
 						</p>
 					</div>
 

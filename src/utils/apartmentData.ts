@@ -89,7 +89,7 @@ const apartmentData: ApartmentData = {
 			dimensions: ["15x15 mtrs", "25x25 mtrs"],
 			img: ST,
 			mapEmbedUrl: "https://maps.app.goo.gl/nKwgP9ujNe894qAB7",
-			redirection: "/Apartment-Rental/departments/santa-teresita",
+			redirection: "/departments/santa-teresita",
 		},
 	],
 	departmentSM: [
@@ -106,8 +106,8 @@ const apartmentData: ApartmentData = {
 				"En Departamentos Santa Mónica, te ofrecemos la elección entre acogedores monoambientes y espaciosos departamentos para dos personas. Cada unidad ha sido cuidadosamente diseñada para brindar comodidad y funcionalidad, creando un ambiente acogedor que te hará sentir como en casa desde el momento en que entres por la puerta.",
 			dimensions: ["15x15 mtrs", "25x25 mtrs"],
 			img: SM,
-			mapEmbedUrl: "https://maps.app.goo.gl/1ApEVKo6ZnagDPCy8",
-			redirection: "/Apartment-Rental/departments/santa-monica",
+			mapEmbedUrl: "https://maps.app.goo.gl/fR49dHvX18NypMhY9",
+			redirection: "/departments/santa-monica",
 		},
 	],
 	departmentsSantaMonica: [
@@ -116,13 +116,9 @@ const apartmentData: ApartmentData = {
 			location: "Santa Monica",
 			name: "Departamento 1",
 			available: false,
-			services: [
-        LightBulb,
-				cable,
-				TapWaterDrink,
-      ],
+			services: ["Luz", "Cable", "Agua"],
 			description:
-				"Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
+				"Incluye Mesada, baño, patio y lavado en el patio",
 			dimensions: "15x15 mtrs",
 			img: SM5,
 		},
@@ -133,7 +129,7 @@ const apartmentData: ApartmentData = {
 			available: false,
 			services: ["Luz", "Cable", "Agua"],
 			description:
-				"Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
+				"Incluye Mesada, baño, patio y lavado en el patio",
 			dimensions: "15x15 mtrs",
 			img: SM2,
 		},
@@ -144,7 +140,7 @@ const apartmentData: ApartmentData = {
 			available: false,
 			services: ["Luz", "Cable", "Agua"],
 			description:
-				"Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
+				"Incluye Mesada, baño, patio y lavado en el patio",
 			dimensions: "35x35 mtrs",
 			img: SM3,
 		},
@@ -155,7 +151,7 @@ const apartmentData: ApartmentData = {
 			available: true,
 			services: ["Luz", "Cable", "Agua"],
 			description:
-				"Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio Incluye Mesada, baño, patio y lavado en el patio",
+				"Incluye Mesada, baño, patio y lavado en el patio",
 			dimensions: "35x35 mtrs",
 			img: SM4,
 		},

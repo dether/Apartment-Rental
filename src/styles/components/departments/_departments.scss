@@ -114,6 +114,11 @@
 						color: var(--main-color);
 					}
 				}
+				h3 {
+					text-align: center;
+					font-size: 1.6rem;
+					font-weight: 300;
+				}
 
 				.services-icons {
 					margin-top: 1rem;
@@ -133,6 +138,8 @@
 					color: var(--text-color);
 					cursor: pointer;
 					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.416);
+					margin-left: 35%;
+					margin-right: 35%;
 
 					&:hover {
 						background: var(--main-color);

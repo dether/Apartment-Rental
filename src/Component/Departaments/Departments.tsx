@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import location from "../../utils/icon/location.svg"
+import location from "../../utils/icon/location.svg";
 import apartmentData from "../../utils/apartmentData";
 import { Link } from "react-router-dom";
 
@@ -70,14 +70,20 @@ const Departaments: React.FC = () => {
 									))}
 								</div>
 								<h1>Ubicación:</h1>
-								<p><img src={location}></img><a href={department.mapEmbedUrl} target="_blank"
-										rel="noopener noreferrer">{department.location}</a></p>
+								<p>
+									<img src={location}></img>
+									<a
+										href={department.mapEmbedUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{department.location}
+									</a>
+								</p>
 								<button className="btn">
-								<Link to={department.redirection}>
-							<p>
-							Ver los departamentos
-							</p>
-						</Link>
+									<Link to={department.redirection}>
+										<h3>Ver los departamentos</h3>
+									</Link>
 									{/* {" "}
 									<a href={department.redirection}>
 										Ver los departamentos

@@ -19,17 +19,17 @@ const AvailableDepartments: React.FC = () => {
 
 	return (
 		<section className="available" id="available">
-			<h2 >Disponibilidad</h2>
+			<h2>Disponibilidad</h2>
 			<div className={`card-available ${isAnyAvailable ? "green" : "red"}`}>
 				<p className="card-title-available">{title}</p>
 				{isAnyAvailable ? (
 					<>
-						<Link to="/Apartment-Rental/departments/santa-teresita">
+						<Link to="/departments/santa-teresita">
 							<p className="small-desc-availableST">
 								{`Departamentos en Santa Teresita: ${availableCountST}/10`}
 							</p>
 						</Link>
-						<Link to="/Apartment-Rental/departments/santa-monica">
+						<Link to="/departments/santa-monica">
 							<p className="small-desc-availableSM">
 								{`Departamentos en Santa Monica: ${availableCountSM}/10`}
 							</p>
